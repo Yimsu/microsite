@@ -1,0 +1,40 @@
+#smooth-content {
+  overflow: visible;
+  width: 100%;
+  height: 1000vh;
+  /* height: calc(500vh + 3060px); */
+  /* 전체 높이 */
+}
+
+
+/* section01 */
+#section01 {
+  background: dodgerblue;
+  height: 100vh;
+}
+/* #section01 .img01 {
+
+} */
+
+
+
+#section02 {
+  background: pink;
+  height: 100vh;
+}
+#section03 {
+  background: dodgerblue;
+  height: 100vh;
+}
+#section04 {
+  background: skyblue;
+  height: 100vh;
+}
+#section05 {
+  height: 100vh;
+  background: pink;
+}
+#section06 {
+  height: 100vh;
+  background: skyblue;
+}
