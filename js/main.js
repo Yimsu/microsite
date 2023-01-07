@@ -26,14 +26,11 @@ window.addEventListener('scroll', () => {
     if(scrollTop > 5600) {
       $('.left_bottom_text_03').classList.add('on');
     }
-    if(scrollTop > 5000) {
-      $('.right_top_text_03').classList.add('on');
-    }
 
-    if(scrollTop > 6500) {
+    if(scrollTop > 6600) {
       $('.title1_04').classList.add('on');
     }
-    if(scrollTop > 6700) {
+    if(scrollTop > 6800) {
       $('.title2_04').classList.add('on');
     }
 

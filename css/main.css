@@ -259,17 +259,7 @@
   position: absolute;
   right: 134px;
   top: 185px;
-  height: 95px;
-  overflow: hidden;
 }
-#section03 .right_top_text_03 img {
- transform: translateY(95px);
- transition: 1s;
-}
-#section03 .right_top_text_03.on img {
- transform: translateY(0);
-}
-
 
 #section03 .left_bottom_text_03 {
   position: absolute;
