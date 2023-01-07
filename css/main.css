@@ -1,6 +1,5 @@
 #smooth-wrapper {
   width: 100%;
-
   overflow-x: hidden !important;
 }
 
@@ -64,23 +63,16 @@
   margin-top: 20px;
 }
 
-.maintitle01 .outline {
+.maintitle01 .title_01 {
   position: absolute;
   top: 0;
   left: 0;
   height: 430px;
 } 
 
-.maintitle01 .inside {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 430px;
-  overflow: hidden;
-}
-
-.maintitle01 .inside li {
-  height: 128px;
+.maintitle01 .title_stroke_01 {
+  position:relative;
+  z-index:1234
 }
 
 #smooth-content {
@@ -90,6 +82,8 @@
   /* height: calc(500vh + 3060px); */
   /* 전체 높이 */
 }
+
+/************************* section01 ***************************/
 
 #section01 {
   height: 4000px;
@@ -114,7 +108,7 @@
   background: url(../img/part1-1/background_00.jpg);
 }
 
-#section01 .rbtext01 {
+#section01 .rbtext_01 {
   position: absolute;
   right: 30px;
   bottom: 30px;
@@ -124,44 +118,23 @@
   transition: 1s;
 }
 
-#section01 .rbtext01.on {
+#section01 .rbtext_01.on {
   background: url(../img/part1-1/galaxy_buds_pro_right_bottom.png);
 }
 
-/* #section01 .maintitle01 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-
-#section01 .maintitle01 li {
-  position: relative;
-  height: 128px;
-}
-
-#section01 .maintitle01 li+li {
-  margin-top: 20px;
-}
-
-#section01 .maintitle01 li > div {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-} */
-
-#section01 .left_bottom_text_red_01 {
+#section01 .lbtext_01 {
   position: absolute;
   left: 30px;
   bottom: 30px;
+  width: 312px;
+  height: 10px;
+  background: url(../img/part1-1/noise_cenceling_red.png);
+  transition: 1s;
 }
 
-#section01 .right_bottom_text_red_01 {
-  position: absolute;
-  right: 30px;
-  bottom: 30px;
-} 
+#section01 .lbtext_01.on {
+  background: url(../img/part1-1/noise_canceling.png);
+}
 
 .maintitle01 .mainimg01 {
   position: absolute;
@@ -174,7 +147,7 @@
 
 #section01 .main_text_01 {
   position: absolute;
-  top: 164px;
+  top: 161px;
   left: 50%;
   transform: translateX(-50%);
   z-index:150;
@@ -189,20 +162,6 @@
   opacity: 0;
 }
 
-#section01 .left_bottom_text_01 {
-  position: absolute;
-  left: 30px;
-  bottom: 30px;
-  opacity: 0;
-}
-
-#section01 .right_bottom_text_01 {
-  position: absolute;
-  right: 30px;
-  bottom: 30px;
-  opacity: 0;
-} 
-
 
 
 
@@ -210,7 +169,7 @@
 /************************* section02 ***************************/
 #section02 {
   height: 1500px;
-  background: #1c1b1b;
+  background: #191919;
 }
 
 /************************* section03 ***************************/
@@ -226,14 +185,14 @@
   left: 340px;
   top: 1000px;
   z-index: 100;
-  opacity: 0;
+  /* opacity: 0; */
 }
 #section03 .main_picture02_03 {
   position: absolute;
   right: 340px;
   /* 시작위치 */
   bottom: 650px;
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 /* 메인 텍스트 */
@@ -246,15 +205,17 @@
 #section03 .main_right_title_03 li+li {
   margin-top: 20px;
 }
+
 #section03 .main_left_title_03 {
   position: absolute;
-  left: 196px;
+  left: -1000px;
   bottom: 178px;
   z-index: 200;
 }
 #section03 .main_left_title_03 li+li {
   margin-top: 20px;
 }
+
 #section03 .long_text_03 {
   position: absolute;
   left: 847px;
@@ -267,7 +228,22 @@
   position: absolute;
   left: 340px;
   top: 175px;
+   /* 이미지 크기대로 박스를 쳐주는 느낌 */
+   height: 19px;
+   /* 사이즈(w,h 사이즈) 바깥으로 나가는 것 잘라주기 */
+   overflow: hidden;
 }
+/* 이미지가 이미지박스 크기 밖에 있다가  */
+#section03 .intelligent_anc_03 img {
+  transform: translateY(19px);
+  transition: 1s;
+}
+/* 이미지가 화면에 나타남 */
+#section03 .intelligent_anc_03.on img {
+  transform: translateY(0);
+}
+
+
 #section03 .left_top_text_03 {
   position: absolute;
   left: 30px;
@@ -278,21 +254,45 @@
   left: 166px;
   top: 270px;
 }
+
 #section03 .right_top_text_03 {
   position: absolute;
   right: 134px;
   top: 185px;
+  height: 95px;
+  overflow: hidden;
 }
+#section03 .right_top_text_03 img {
+ transform: translateY(95px);
+ transition: 1s;
+}
+#section03 .right_top_text_03.on img {
+ transform: translateY(0);
+}
+
+
 #section03 .left_bottom_text_03 {
   position: absolute;
   left: 30px;
   bottom: 240px;
+  height: 19px;
+  overflow: hidden;
 }
+#section03 .left_bottom_text_03 img {
+ transform: translateY(19px);
+ transition: 1s;
+}
+#section03 .left_bottom_text_03.on img {
+ transform: translateY(0);
+}
+
 #section03 .right_bottom_text_03 {
   position: absolute;
   right: 30px;
   bottom: 30px;
 }
+
+
 #section03 .arrow_03 {
   position: absolute;
   right: 200px;
@@ -302,11 +302,11 @@
 
 
 
-/************************ section03 **************************/
+/************************ section04 **************************/
 #section04 {
-  /* background: dodgerblue; */
   width: 100vw;
-  height: 5000px;
+  /* height: 5000px; */
+  height: 100vh;
   background-image: url(../img/part1-4/picture.gif);
   background-repeat: no-repeat;
   background-size: cover;
@@ -321,8 +321,29 @@
   transform: translate(-50%,-50%);
 }
 
-#section04 .maintitle04 .title1 {
-  margin-left: 50px;
+#section04 .maintitle04 .title1_04 {
+  margin-left: 70px;
+  height: 94px;
+  overflow: hidden;
+}
+#section04 .title1_04 img {
+ transform: translateY(94px);
+ transition: 1s;
+}
+#section04 .title1_04.on img {
+ transform: translateY(0);
+}
+
+#section04 .maintitle04 .title2_04 {
+  height: 95px;
+  overflow: hidden;
+}
+#section04 .title2_04 img {
+ transform: translateY(95px);
+ transition: 1s;
+}
+#section04 .title2_04.on img {
+ transform: translateY(0);
 }
 
 #section04 .maintitle04 li+li {

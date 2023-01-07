@@ -12,12 +12,31 @@ window.addEventListener('scroll', () => {
   $('.scrollNum').innerText = scrollTop;
 
   if (scrollTop > 1200) {
-    $('.rbtext01').classList.add('on');
+    $('.rbtext_01').classList.add('on');
   }
 
-  // if(scrollTop > 565) {
-  //   $('.left_bottom_text_red_01').classList.add('on');
-  // }
+  if (scrollTop > 1200) {
+    $('.lbtext_01').classList.add('on');
+  }
+
+    // 얘를 넣으면 스크롤이 왔다갔다 함;;;
+    if(scrollTop > 5000) {
+      $('.intelligent_anc_03').classList.add('on');
+    }
+    if(scrollTop > 5600) {
+      $('.left_bottom_text_03').classList.add('on');
+    }
+    if(scrollTop > 5000) {
+      $('.right_top_text_03').classList.add('on');
+    }
+
+    if(scrollTop > 6500) {
+      $('.title1_04').classList.add('on');
+    }
+    if(scrollTop > 6700) {
+      $('.title2_04').classList.add('on');
+    }
+
 });
 
 gsap.to('.fix01', {
@@ -68,19 +87,7 @@ gsap.to('.maintitle01 .inside', {
     }
 });
 
-// section01 메인 타이틀
-// gsap.to('.maintitle01', {
-      
-//   opacity: 1,
-//     scrollTrigger: {
-//     trigger: "#section01",
-//     start: "top top",
-//     end: "+=2000",
-//     scrub: true,
-//     }
-// });
-
-// // section01 메인 사진
+// section01 메인 사진
 gsap.to('.mainimg01', {
   opacity: 1,
   scrollTrigger: {
@@ -100,48 +107,68 @@ gsap.to('.mainimg01 img', {
   }
 });
 
+// 메인 텍스트
 gsap.to('.main_text_01', {
       
   opacity: 1,
     scrollTrigger: {
     trigger: "#section01",
-    start: "1200 top",
+    start: "1000 top",
     end: "+=600",
     scrub: true,
     }
 });
+gsap.to('.main_text_01 img', {
+  opacity: 0,
+  scrollTrigger: {
+    trigger: "#section01",
+    start: "2000 top",
+    end: "+=600",
+    scrub: true,
+  }
+});
+
+//롱텍스트
 gsap.to('.long_text_01', {
-      
   opacity: 1,
-    scrollTrigger: {
+  scrollTrigger: {
     trigger: "#section01",
     start: "1000 top",
     end: "+=600",
     scrub: true,
     }
 });
-gsap.to('.left_bottom_text_01', {
-      
-  opacity: 1,
-    scrollTrigger: {
+gsap.to('.long_text_01 img', {
+  opacity: 0,
+  scrollTrigger: {
     trigger: "#section01",
-    start: "1000 top",
+    start: "2000 top",
     end: "+=600",
     scrub: true,
-    }
+  }
 });
-gsap.to('.right_bottom_text_01', {
-      
-  opacity: 1,
-    scrollTrigger: {
+
+gsap.to('.rbtext_01', {
+  opacity: 0,
+  scrollTrigger: {
     trigger: "#section01",
-    start: "1000 top",
-    end: "+=600",
+    start: "2500 top",
+    end: "+=400",
     scrub: true,
-    }
+  }
+});
+gsap.to('.lbtext_01', {
+  opacity: 0,
+  scrollTrigger: {
+    trigger: "#section01",
+    start: "2500 top",
+    end: "+=400",
+    scrub: true,
+  }
 });
 
 
+//////////////////////////////////////// section03 
 gsap.to('.main_picture01_03', {    
   top: 220,
   opacity: 1,
@@ -173,31 +200,51 @@ scrollTrigger: {
   end: "+=1200",
   scrub: true,
 }
-});
+}); 
+
+gsap.to('.main_left_title_03', { 
+  //최종위치  
+left: 196,
+opacity: 1,
+scrollTrigger: {
+  trigger: "#section02",
+  start: "bottom bottom",
+  end: "+=1400",
+  scrub: true,
+}
+}); 
 
 
-//////////////////////////////////////// section03 
-gsap.to(".circle_text_03", {
+
+
+
+
+
+
+
+//////////////////////////////////////// section04 
+gsap.to(".circle_text_04", {
   rotation: 360,
   ease: "none",
   duration: 15,
   repeat: -1,
 });
 
-gsap.to('.sticky-parent', {
-  // x: -innerWidth*3,
-  scrollTrigger: {
-      trigger: "#section04",
-      start: "top top",
-      // end: () => "+=" + 300,
-      end: 'bottom bottom',
-      pin: true,
-      // pinSpace:false,
-      pinSpacing: false,
-      scrub: true,
-      markers: true
-  }
-});
+
+// gsap.to('.sticky-parent', {
+//   // x: -innerWidth*3,
+//   scrollTrigger: {
+//       trigger: "#section04",
+//       start: "top top",
+//       // end: () => "+=" + 300,
+//       end: 'bottom bottom',
+//       pin: true,
+//       // pinSpace:false,
+//       pinSpacing: false,
+//       scrub: true,
+//       markers: true
+//   }
+// });
 
   // gsap.to('.fix03', {
           
