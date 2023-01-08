@@ -90,7 +90,7 @@ gsap.to('.mainimg01', {
   scrollTrigger: {
     trigger: "#section01",
     start: "1000 top",
-    end: "+=600",
+    end: "+=1000",
     scrub: true,
   }
 });
@@ -99,7 +99,7 @@ gsap.to('.mainimg01 img', {
   scrollTrigger: {
     trigger: "#section01",
     start: "2000 top",
-    end: "+=600",
+    end: "+=1000",
     scrub: true,
   }
 });
@@ -111,7 +111,7 @@ gsap.to('.main_text_01', {
     scrollTrigger: {
     trigger: "#section01",
     start: "1000 top",
-    end: "+=600",
+    end: "+=1000",
     scrub: true,
     }
 });
@@ -120,7 +120,7 @@ gsap.to('.main_text_01 img', {
   scrollTrigger: {
     trigger: "#section01",
     start: "2000 top",
-    end: "+=600",
+    end: "+=1000",
     scrub: true,
   }
 });
@@ -131,7 +131,7 @@ gsap.to('.long_text_01', {
   scrollTrigger: {
     trigger: "#section01",
     start: "1000 top",
-    end: "+=600",
+    end: "+=1000",
     scrub: true,
     }
 });
@@ -140,7 +140,7 @@ gsap.to('.long_text_01 img', {
   scrollTrigger: {
     trigger: "#section01",
     start: "2000 top",
-    end: "+=600",
+    end: "+=1000",
     scrub: true,
   }
 });
