@@ -20,17 +20,17 @@ window.addEventListener('scroll', () => {
   }
 
     // 얘를 넣으면 스크롤이 왔다갔다 함;;;
-    if(scrollTop > 5000) {
+    if(scrollTop > 4700) {
       $('.intelligent_anc_03').classList.add('on');
     }
     if(scrollTop > 5600) {
       $('.left_bottom_text_03').classList.add('on');
     }
 
-    if(scrollTop > 6500) {
+    if(scrollTop > 6300) {
       $('.title1_04').classList.add('on');
     }
-    if(scrollTop > 6700) {
+    if(scrollTop > 6400) {
       $('.title2_04').classList.add('on');
     }
 
@@ -89,7 +89,7 @@ gsap.to('.mainimg01', {
   opacity: 1,
   scrollTrigger: {
     trigger: "#section01",
-    start: "1000 top",
+    start: "610 top",
     end: "+=1000",
     scrub: true,
   }
@@ -110,7 +110,7 @@ gsap.to('.main_text_01', {
   opacity: 1,
     scrollTrigger: {
     trigger: "#section01",
-    start: "1000 top",
+    start: "610 top",
     end: "+=1000",
     scrub: true,
     }
@@ -206,7 +206,7 @@ opacity: 1,
 scrollTrigger: {
   trigger: "#section02",
   start: "bottom bottom",
-  end: "+=1400",
+  end: "+=1200",
   scrub: true,
 }
 }); 
