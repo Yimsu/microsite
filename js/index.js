@@ -14,7 +14,7 @@ window.addEventListener('scroll', () => {
 
 gsap.to(".bg03", {
     scale: 3,
-    height: 30,
+    height: 70,
     // duration: 10,
     scrollTrigger: {
       trigger: "#section01",
