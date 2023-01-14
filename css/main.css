@@ -46,20 +46,18 @@
   margin-right: 30px;
 }
 
-
-
 /* 메인 타이틀 */
 .maintitle01 {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
-  width: 1802px; 
+  transform: translate(-50%, -50%);
+  width: 1802px;
   height: 430px;
   z-index: 150;
 }
 
-.maintitle01 li+li {
+.maintitle01 li + li {
   margin-top: 20px;
 }
 
@@ -67,18 +65,19 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 430px;
-} 
+
+  width: calc(100vw - 200px);
+  height: auto;
+}
 
 .maintitle01 .title_stroke_01 {
-  position:relative;
-  z-index:1234
+  position: relative;
+  z-index: 1234;
 }
 
 #smooth-content {
   overflow: visible;
   width: 100%;
-  height: 1000vh;
   /* height: calc(500vh + 3060px); */
   /* 전체 높이 */
 }
@@ -102,7 +101,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   width: 100vw;
   height: 100vh;
   background: url(../img/part1-1/background_00.jpg);
@@ -138,11 +137,19 @@
 
 .maintitle01 .mainimg01 {
   position: absolute;
-  top: calc(50% - 411px);
+  top: calc(50% - (100vh - 200px) / 2);
   left: 50%;
+
+  width: auto;
+  height: calc(100vh - 200px);
+
   transform: translateX(-50%);
   opacity: 0;
   z-index: 300;
+}
+.maintitle01 .mainimg01 img {
+  width: 100%;
+  height: 100%;
 }
 
 #section01 .main_text_01 {
@@ -150,10 +157,10 @@
   top: 161px;
   left: 50%;
   transform: translateX(-50%);
-  z-index:150;
+  z-index: 150;
   opacity: 0;
   /* mix-blend-mode:unset; */
-} 
+}
 
 #section01 .long_text_01 {
   position: absolute;
@@ -161,10 +168,6 @@
   bottom: 170px;
   opacity: 0;
 }
-
-
-
-
 
 /************************* section02 ***************************/
 #section02 {
@@ -202,7 +205,7 @@
   top: 310px;
   opacity: 0;
 }
-#section03 .main_right_title_03 li+li {
+#section03 .main_right_title_03 li + li {
   margin-top: 20px;
 }
 
@@ -212,7 +215,7 @@
   bottom: 178px;
   z-index: 200;
 }
-#section03 .main_left_title_03 li+li {
+#section03 .main_left_title_03 li + li {
   margin-top: 20px;
 }
 
@@ -228,10 +231,10 @@
   position: absolute;
   left: 340px;
   top: 175px;
-   /* 이미지 크기대로 박스를 쳐주는 느낌 */
-   height: 19px;
-   /* 사이즈(w,h 사이즈) 바깥으로 나가는 것 잘라주기 */
-   overflow: hidden;
+  /* 이미지 크기대로 박스를 쳐주는 느낌 */
+  height: 19px;
+  /* 사이즈(w,h 사이즈) 바깥으로 나가는 것 잘라주기 */
+  overflow: hidden;
 }
 /* 이미지가 이미지박스 크기 밖에 있다가  */
 #section03 .intelligent_anc_03 img {
@@ -242,7 +245,6 @@
 #section03 .intelligent_anc_03.on img {
   transform: translateY(0);
 }
-
 
 #section03 .left_top_text_03 {
   position: absolute;
@@ -269,11 +271,11 @@
   overflow: hidden;
 }
 #section03 .left_bottom_text_03 img {
- transform: translateY(19px);
- transition: 1s;
+  transform: translateY(19px);
+  transition: 1s;
 }
 #section03 .left_bottom_text_03.on img {
- transform: translateY(0);
+  transform: translateY(0);
 }
 
 #section03 .right_bottom_text_03 {
@@ -282,33 +284,73 @@
   bottom: 30px;
 }
 
-
 #section03 .arrow_03 {
   position: absolute;
   right: 200px;
   bottom: 500px;
 }
 
-
-
-
 /************************ section04 **************************/
 #section04 {
   width: 100vw;
-  /* height: 5000px; */
+  height: 15000px; /* 가로 총 길이 */
+
+  overflow-x: visible;
+}
+
+#section04 .container {
+  position: relative;
+
   height: 100vh;
+}
+
+#section04 .slides {
+  display: flex;
+}
+
+#section04 section {
+  width: inherit;
+}
+
+#section04 .slide1 {
+  width: 100vw;
+  height: 100vh;
+
   background-image: url(../img/part1-4/picture.gif);
   background-repeat: no-repeat;
   background-size: cover;
+}
 
-  overflow-x: visible;
+#section04 .slide1 > div {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+#section04 .slide2 {
+  width: 200vw;
+  height: 100vh;
+}
+#section04 .slide3 {
+  width: 100vw;
+  height: 100vh;
+
+  background: blue;
+}
+#section04 .slide4 {
+  width: 100vw;
+  height: 100vh;
+}
+#section04 .slide5 {
+  width: 100vw;
+  height: 100vh;
 }
 
 #section04 .maintitle04 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 #section04 .maintitle04 .title1_04 {
@@ -317,11 +359,11 @@
   overflow: hidden;
 }
 #section04 .title1_04 img {
- transform: translateY(94px);
- transition: 1s;
+  transform: translateY(94px);
+  transition: 1s;
 }
 #section04 .title1_04.on img {
- transform: translateY(0);
+  transform: translateY(0);
 }
 
 #section04 .maintitle04 .title2_04 {
@@ -329,14 +371,14 @@
   overflow: hidden;
 }
 #section04 .title2_04 img {
- transform: translateY(95px);
- transition: 1s;
+  transform: translateY(95px);
+  transition: 1s;
 }
 #section04 .title2_04.on img {
- transform: translateY(0);
+  transform: translateY(0);
 }
 
-#section04 .maintitle04 li+li {
+#section04 .maintitle04 li + li {
   margin-top: 21px;
 }
 
@@ -355,7 +397,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 #section04 .right_bottom_04 {
@@ -385,25 +427,19 @@
   top: 450px;
 }
 
-
-
-
 #section05 {
   height: 100vh;
-  background: pink;
 }
 #section06 {
   height: 100vh;
   background: skyblue;
 }
 
-
-
-.sticky-parent{
+.sticky-parent {
   height: 700vh;
 }
 
-.sticky{
+.sticky {
   position: sticky;
   top: 0px;
   max-height: 100vh;
@@ -411,11 +447,11 @@
   overflow-y: hidden;
 }
 
-.horizontal{
+.horizontal {
   display: flex;
 }
 
-.dim{
+.dim {
   display: block;
   min-width: 50vw;
   height: 100vh;

@@ -201,6 +201,32 @@ gsap.to(".main_left_title_03", {
   },
 });
 
+gsap.to("#section04 .container", {
+  scrollTrigger: {
+    trigger: "#section04",
+    start: "top top",
+    end: "bottom bottom",
+    pin: true,
+    pinSpacing: false,
+    scrub: true,
+  },
+});
+
+/* 스크롤 시작하기 전에 대기할 시간 */
+const Section4ScrollDelay = 4000;
+
+const Section4Height = document.getElementById("section04").offsetHeight;
+
+gsap.to("#section04 .slides", {
+  x: -Section4Height,
+  scrollTrigger: {
+    trigger: ".section04-marker",
+    start: `top+=${Section4ScrollDelay}px top`,
+    end: `+=${Section4Height}`,
+    scrub: true,
+  },
+});
+
 //////////////////////////////////////// section04
 gsap.to(".circle_text_04", {
   rotation: 360,
