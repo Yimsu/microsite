@@ -212,8 +212,9 @@ gsap.to("#section04 .container", {
   },
 });
 
+//////////////////////////////////////// section04
 /* 스크롤 시작하기 전에 대기할 시간 */
-const Section4ScrollDelay = 4000;
+const Section4ScrollDelay = 800;
 
 const Section4Height = document.getElementById("section04").offsetHeight;
 
@@ -227,7 +228,6 @@ gsap.to("#section04 .slides", {
   },
 });
 
-//////////////////////////////////////// section04
 gsap.to(".circle_text_04", {
   rotation: 360,
   ease: "none",

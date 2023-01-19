@@ -65,9 +65,6 @@
   position: absolute;
   top: 0;
   left: 0;
-
-  width: calc(100vw - 200px);
-  height: auto;
 }
 
 .maintitle01 .title_stroke_01 {
@@ -137,13 +134,9 @@
 
 .maintitle01 .mainimg01 {
   position: absolute;
-  top: calc(50% - (100vh - 200px) / 2);
+  top: 50%;
   left: 50%;
-
-  width: auto;
-  height: calc(100vh - 200px);
-
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   opacity: 0;
   z-index: 300;
 }
