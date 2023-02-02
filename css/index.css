@@ -47,43 +47,82 @@ p {
   width: 100vw;
 }
 
-.section02.bgimg {
+#section02 {
+  height: 980px;
+  width: 1920px;
+}
+
+#section02 .bgimg {
+  position: relative;
+  height: 980px;
+  width: 1920px;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-/* #section01.bg01 {
-  position: absolute;
-  top: 0;
-  height: 490px;
-  width: 100vw;
-  background-color: #ff00ee;
-  z-index: 100;
-}
-#section01 .bg02 {
-  position: absolute;
-  bottom: 0;
-  height: 490px;
-  width: 100vw;
-  background-color: #262626;
-  z-index: 100;
-}
-#section01 .bg03 {
+#section02 .circle_text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 0px;
-  width: 100vw;
-  background-color: #101010;
-  z-index: 200;
+  z-index: 100;
 }
 
-#section02 {
-  height: 100vh;
-  background: pink;
+#section02 .open_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-#section03 {
-  height: 100vh;
-  background: skyblue;
-}  */
+
+/* 호버하기 전 이미지 */
+#section02 .get_start_hover {
+  position: absolute;
+  bottom: 350px;
+  left: 899px;
+  /* position: absolute;
+  top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  background: url(../img/intro/get_start_stroke.png);
+  width: 129px;
+  height: 40px;
+  /* 호버하고 1초만에 바뀜 */
+  transition: 0.1s;
+  z-index: 100;
+}
+
+/* 호버 한 후 이미지 */
+#section02 .get_start_hover:hover {
+  background: url(../img/intro/get_start_white.png);
+}
+
+#section02 .tunes_out_noises {
+  position: absolute;
+  top: 50%;
+  left: 350px;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+
+#section02 .tunes_in_voices {
+  position: absolute;
+  top: 50%;
+  right: -200px;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+
+#section02 .bottom_text {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+}
+
+#section02 .line {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-53%, -50%);
+}

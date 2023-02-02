@@ -34,3 +34,10 @@ setTimeout(() => {
   // 검은색 치우기
   $(".overlay").removeClass("active");
 }, Step2 + 2000);
+
+gsap.to(".circle_text", {
+  rotation: 360,
+  ease: "none",
+  duration: 15,
+  repeat: -1,
+});
