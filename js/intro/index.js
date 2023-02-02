@@ -2,21 +2,21 @@ setTimeout(() => {
   $("#section01 .upper").addClass("fade-out-1");
   $("#section01 .lower").addClass("fade-out-1");
   $("#section01 .text").addClass("fade-out-1");
-}, 2000);
+}, 200);
 
 setTimeout(() => {
   $("#section01 .upper").addClass("fade-out-2");
   $("#section01 .lower").addClass("fade-out-2");
   $("#section01 .text").addClass("fade-out-2");
-}, 3000);
+}, 1500);
 
 setTimeout(() => {
   $("#section01 .upper").addClass("fade-out-3");
   $("#section01 .lower").addClass("fade-out-3");
   $("#section01 .text").addClass("fade-out-3");
-}, 5000);
+}, 3000);
 
-const Step2 = 5600;
+const Step2 = 3500;
 
 setTimeout(() => {
   // 검은색으로 덮기
@@ -26,6 +26,7 @@ setTimeout(() => {
     $("#section02").addClass("active");
   }, 111);
 }, Step2);
+
 setTimeout(() => {
   $("#section01").remove();
 }, Step2 + 1000);

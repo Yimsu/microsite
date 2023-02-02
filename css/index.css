@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "summerdream";
+  src: url(../font/Summerdreamsansdemo-X396G.ttf);
+}
+
+body,
+html {
+  font-family: "summerdream", sans-serif;
+}
+
+p {
+  font-size: 40px;
+}
+
 #smooth-wrapper {
   width: 100%;
   overflow-x: hidden !important;
@@ -33,12 +47,17 @@
   width: 100vw;
 }
 
+.section02.bgimg {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* 
 #section01.bg01 {
   position: absolute;
   top: 0;
   height: 490px;
   width: 100vw;
-  /* background-color: #eeeeeb; */
   background-color: #ff00ee;
   z-index: 100;
 }
@@ -68,4 +87,4 @@
 #section03 {
   height: 100vh;
   background: skyblue;
-}
+}  */
