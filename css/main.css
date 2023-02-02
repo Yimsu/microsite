@@ -290,7 +290,7 @@
 /************************ section04 **************************/
 #section04 {
   width: 100vw;
-  height: 9000px; /* 가로 총 길이 */
+  height: 8800px; /* 가로 총 길이 */
 
   overflow-x: visible;
 }
