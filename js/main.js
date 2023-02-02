@@ -17,7 +17,6 @@ window.addEventListener("scroll", () => {
     $(".lbtext_01").classList.add("on");
   }
 
-  // 얘를 넣으면 스크롤이 왔다갔다 함;;;
   if (scrollTop > 4700) {
     $(".intelligent_anc_03").classList.add("on");
   }
@@ -155,7 +154,7 @@ gsap.to(".lbtext_01", {
   },
 });
 
-//////////////////////////////////////// section03
+//////////////////////////////////////// section03  //////////////////////////////////////
 gsap.to(".main_picture01_03", {
   top: 220,
   opacity: 1,
@@ -201,6 +200,7 @@ gsap.to(".main_left_title_03", {
   },
 });
 
+////////////////////////////// section04 //////////////////////////////////////
 gsap.to("#section04 .container", {
   scrollTrigger: {
     trigger: "#section04",
@@ -212,7 +212,41 @@ gsap.to("#section04 .container", {
   },
 });
 
-//////////////////////////////////////// section04
+////////////////////////////// section05 //////////////////////////////////////
+
+gsap.to("#section05 .circle_text_05", {
+  rotation: 360,
+  ease: "none",
+  duration: 15,
+  repeat: -1,
+});
+
+////////////////////////////// section06 //////////////////////////////////////
+
+//////////////////////////// section07 //////////////////////////////////////
+gsap.to("#section07 .circle_line", {
+  rotation: 360,
+  ease: "none",
+  duration: 10,
+  repeat: -1,
+});
+
+//////////////////////////// section08 //////////////////////////////////////
+gsap.to(".side_text_08", {
+  // 사진 가로 크기
+  y: -585,
+  ease: "none",
+  duration: 4,
+  repeat: -1,
+});
+
+gsap.to("#section08 .circle_line_08", {
+  rotation: 360,
+  ease: "none",
+  duration: 10,
+  repeat: -1,
+});
+
 /* 스크롤 시작하기 전에 대기할 시간 */
 const Section4ScrollDelay = 800;
 

@@ -57,6 +57,10 @@
   z-index: 150;
 }
 
+.maintitle01.off {
+  display: none;
+}
+
 .maintitle01 li + li {
   margin-top: 20px;
 }
@@ -286,7 +290,7 @@
 /************************ section04 **************************/
 #section04 {
   width: 100vw;
-  height: 15000px; /* 가로 총 길이 */
+  height: 9000px; /* 가로 총 길이 */
 
   overflow-x: visible;
 }
@@ -301,9 +305,9 @@
   display: flex;
 }
 
-#section04 section {
+/* #section04 section {
   width: inherit;
-}
+} */
 
 #section04 .slide1 {
   width: 100vw;
@@ -420,12 +424,285 @@
   top: 450px;
 }
 
+/************************ section05 **************************/
+
 #section05 {
+  position: relative;
   height: 100vh;
+  width: 2600px;
+  background-color: black;
 }
+
+#section05 .title_first {
+  position: absolute;
+  bottom: 160px;
+}
+
+#section05 .title_second {
+  position: absolute;
+  bottom: 50px;
+}
+
+#section05 .ldft_top_text_05 {
+  position: absolute;
+  left: 50px;
+  top: 30px;
+}
+
+#section05 .picture1_05 {
+  position: absolute;
+  left: 200px;
+  bottom: 160px;
+}
+
+#section05 .picture2_05 {
+  position: absolute;
+  left: 700px;
+  top: 150px;
+  z-index: 100;
+}
+
+#section05 .picture3_05 {
+  position: absolute;
+  left: 1200px;
+  top: 100px;
+}
+
+#section05 .picture4_05 {
+  position: absolute;
+  left: 1500px;
+  bottom: 130px;
+}
+
+#section05 .immersive_sound_05 {
+  position: absolute;
+  left: 100px;
+  top: 300px;
+}
+#section05 .immersive_sound_05 li + li {
+  margin-top: 10px;
+}
+
+#section05 .get_lost_in_05 {
+  position: absolute;
+  left: 190px;
+  top: 400px;
+}
+#section05 .get_lost_in_05 li + li {
+  margin-top: 10px;
+}
+
+#section05 .circle {
+  position: absolute;
+  left: 540px;
+  top: 260px;
+}
+
+#section05 .take_noise_05 {
+  position: absolute;
+  left: 1600px;
+  top: 250px;
+}
+#section05 .take_noise_05 li + li {
+  margin-top: 10px;
+}
+
+#section05 .plus {
+  position: absolute;
+  left: 1400px;
+  top: 400px;
+}
+
+#section05 .plus2 {
+  position: absolute;
+  left: 2330px;
+  top: 40px;
+}
+
+#section05 .circle_text_05 {
+  position: absolute;
+  left: 2200px;
+  top: -100px;
+  width: 292px;
+  height: 292px;
+}
+
+/************************ section06 **************************/
 #section06 {
   height: 100vh;
+  width: 1920px;
   background: skyblue;
+}
+
+/************************ section07 **************************/
+#section07 {
+  position: relative;
+  height: 100vh;
+  width: 1920px;
+  background-image: url(../img/part2-3/64f557133472299.61d298ef930b0.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#section07 .title1_07 {
+  position: absolute;
+  top: 380px;
+  left: 220px;
+}
+
+#section07 .title2_07 {
+  position: absolute;
+  bottom: 380px;
+  right: 220px;
+}
+
+#section07 .text_07 {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+}
+#section07 .text_07 li + li {
+  margin-top: 8px;
+}
+
+#section07 .bettery_life_07 {
+  position: absolute;
+  top: 330px;
+  left: 220px;
+}
+
+#section07 .about_figure_07 {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+}
+#section07 .about_text_07 {
+  position: absolute;
+  top: 32px;
+  left: 42px;
+}
+#section07 .plus_07 {
+  position: absolute;
+  top: 200px;
+  left: 100px;
+}
+#section07 .plus2_07 {
+  position: absolute;
+  top: 100px;
+  right: 130px;
+}
+#section07 .number2023_07 {
+  position: absolute;
+  top: 390px;
+  left: 1200px;
+}
+#section07 .power_07 {
+  position: absolute;
+  top: 445px;
+  left: 1200px;
+}
+
+#section07 .circle_line {
+  position: absolute;
+  bottom: 80px;
+  left: -20px;
+  width: 317px;
+  height: 317px;
+}
+#section07 .play_text {
+  position: absolute;
+  bottom: 210px;
+  left: 80px;
+}
+#section07 .right_bottom_text_07 {
+  position: absolute;
+  bottom: 50px;
+  right: 30px;
+}
+
+/************************ section08 **************************/
+#section08 {
+  position: relative;
+  height: 100vh;
+  width: 1920px;
+  background: rgb(255, 255, 255);
+}
+
+/* 연속으로 텍스트 넘어가기(프레임 만들기) (자바스크립트도 사용)*/
+#section08 .side_text_08 {
+  position: absolute;
+  left: 100;
+  width: 64px;
+  /* height: 585px; */
+  height: 1755px;
+  /* 사이즈(w,h 사이즈) 바깥으로 나가는 것 잘라주기 */
+  overflow: hidden;
+}
+
+#section08 .title_08 {
+  position: absolute;
+  left: 50%;
+  top: 250px;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+#section08 .title_08 li + li {
+  margin-top: 20px;
+}
+
+#section08 .sub_title_08 {
+  position: absolute;
+  left: 50%;
+  top: 160px;
+  transform: translateX(-50%);
+}
+
+#section08 .circle_line_08 {
+  position: absolute;
+  top: 80px;
+  right: 70px;
+  width: 454px;
+  height: 454px;
+  z-index: 50;
+}
+#section08 .play_08 {
+  position: absolute;
+  top: 160px;
+  right: 250px;
+}
+
+#section08 .picture_08 {
+  position: absolute;
+  top: 370px;
+  right: 0px;
+}
+/*************************************************************/
+
+#section09 {
+  height: 100vh;
+  width: 1920px;
+  background: rgb(111, 42, 42);
+}
+#section10 {
+  height: 100vh;
+  width: 1920px;
+  background: rgb(52, 181, 23);
+}
+#section11 {
+  height: 100vh;
+  width: 1920px;
+  background: rgb(35, 57, 223);
+}
+#section12 {
+  height: 100vh;
+  width: 1920px;
+  background: rgb(193, 12, 72);
+}
+#section13 {
+  height: 100vh;
+  width: 1920px;
+  background: rgb(183, 252, 45);
 }
 
 .sticky-parent {
