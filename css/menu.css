@@ -1,0 +1,32 @@
+#menu {
+  position: fixed;
+  left: calc(50vw - 500px);
+  top: calc(50vh - 250px);
+
+  width: 1000px;
+  height: 500px;
+
+  background-color: blue;
+
+  z-index: 99999;
+}
+
+#menu-overlay {
+  display: none;
+
+  position: fixed;
+  left: 0px;
+  top: 0px;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+
+  z-index: 99999;
+}
+
+#menu-overlay.active {
+  display: block;
+}

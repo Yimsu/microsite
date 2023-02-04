@@ -290,7 +290,7 @@
 /************************ section04 **************************/
 #section04 {
   width: 100vw;
-  height: 8800px; /* 가로 총 길이 */
+  height: 8360px; /* 가로 총 길이 */
 
   overflow-x: visible;
 }
@@ -632,7 +632,7 @@
 /* 연속으로 텍스트 넘어가기(프레임 만들기) (자바스크립트도 사용)*/
 #section08 .side_text_08 {
   position: absolute;
-  left: 100;
+  left: 10px;
   width: 64px;
   /* height: 585px; */
   height: 1755px;
@@ -680,9 +680,12 @@
 /*************************************************************/
 
 #section09 {
-  height: 100vh;
+  /* 기다리고싶은 숫자만큼 변경 */
+  height: calc(100vh + 1548px - 370px + 1000px);
   width: 1920px;
-  background: rgb(111, 42, 42);
+  /* section09 시작 */
+  /* 기다리고싶은 숫자만큼 변경 */
+  padding-top: calc((1548px - 598px) + 1000px);
 }
 #section10 {
   height: 100vh;

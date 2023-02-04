@@ -205,7 +205,7 @@ gsap.to("#section04 .container", {
   scrollTrigger: {
     trigger: "#section04",
     start: "top top",
-    end: "bottom bottom",
+    end: "bottom+=1000 bottom", // 스크롤 기다리고 싶은 숫자만큼넣고 css도 변경
     pin: true,
     pinSpacing: false,
     scrub: true,
@@ -257,7 +257,7 @@ gsap.to("#section04 .slides", {
   scrollTrigger: {
     trigger: ".section04-marker",
     start: `top+=${Section4ScrollDelay}px top`,
-    end: `+=${Section4Height}`,
+    end: `+=${Section4Height - 1500}`,
     scrub: true,
   },
 });

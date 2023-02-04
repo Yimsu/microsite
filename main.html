@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/setting.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/trail.css" />
+    <link rel="stylesheet" href="css/menu.css" />
     <!-- <link rel="stylesheet/less" type="text/css" href="/css/main.less" /> -->
+
     <script src="https://cdn.jsdelivr.net/npm/less"></script>
   </head>
   <body>
@@ -21,7 +24,7 @@
       <div class="buds">
         <img src="img/part1-1/buds.png" alt="" />
       </div>
-      <div class="menu">
+      <div class="menu" onclick="toggleMenu()">
         <img src="img/part1-1/menu.png" alt="" />
       </div>
     </header>
@@ -399,15 +402,22 @@
           </div> -->
         </section>
 
-        <div style="width: 1px; height: 15000px">hello</div>
-
-        <section id="section09"></section>
+        <section id="section09">
+          <div style="position: relative">section09 시작</div>
+        </section>
         <section id="section10"></section>
         <section id="section11"></section>
         <section id="section12"></section>
         <section id="section13"></section>
       </div>
     </div>
+
+    <div id="menu-overlay">
+      <div id="menu">
+        <div onclick="hideMenu()">asdfasdf</div>
+      </div>
+    </div>
+
     <script
       src="https://code.jquery.com/jquery-3.6.3.min.js"
       integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
@@ -418,5 +428,7 @@
     <script src="js/ScrollSmoother.min.js"></script>
     <script src="js/setting.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/trail.js"></script>
+    <script src="js/menu.js"></script>
   </body>
 </html>
