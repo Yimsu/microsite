@@ -23,7 +23,7 @@ var Dot = function () {
 Dot.prototype.draw = function () {
   this.node.style.left = this.x + "px";
   this.node.style.top = this.y + "px";
-  this.node.style.opacity = Math.pow(1 - this.opacity, 2);
+  this.node.style.opacity = Math.pow(1 - this.opacity, 1);
 };
 
 // Creates the Dot objects, populates the dots array
