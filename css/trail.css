@@ -6,5 +6,6 @@
   border-radius: 3px;
   background: red;
 
+  pointer-events: none;
   z-index: 999999;
 }
