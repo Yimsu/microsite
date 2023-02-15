@@ -78,12 +78,9 @@ p {
 /* 호버하기 전 이미지 */
 #section02 .get_start_hover {
   position: absolute;
-  bottom: 350px;
-  left: 899px;
-  /* position: absolute;
-  top: 50%;
-  left: 50%; */
-  /* transform: translate(-50%, -50%); */
+  top: 60%;
+  left: 50%;
+  transform: translate(-60%, -50%);
   background: url(../img/intro/get_start_stroke.png);
   width: 129px;
   height: 40px;

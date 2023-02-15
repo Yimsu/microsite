@@ -30,6 +30,40 @@ window.addEventListener("scroll", () => {
   if (scrollTop > 6400) {
     $(".title2_04").classList.add("on");
   }
+
+  if (scrollTop > 7600) {
+    $(".picture1_05").classList.add("on");
+  }
+  if (scrollTop > 7823) {
+    $(".picture2_05").classList.add("on");
+  }
+  if (scrollTop > 8045) {
+    $(".picture3_05").classList.add("on");
+  }
+  if (scrollTop > 8200) {
+    $(".picture4_05").classList.add("on");
+  }
+
+  if (scrollTop > 7600) {
+    $(".IMMERSIVE_05").classList.add("on");
+  }
+  if (scrollTop > 7600) {
+    $(".SOUND_05").classList.add("on");
+  }
+
+  if (scrollTop > 7700) {
+    $(".GET_LOST_IN_05").classList.add("on");
+  }
+  if (scrollTop > 7700) {
+    $(".THE_STUDIO_SOUND_05").classList.add("on");
+  }
+
+  if (scrollTop > 8300) {
+    $(".IMMERSIVE_SOUND_05").classList.add("on");
+  }
+  if (scrollTop > 8300) {
+    $(".TAKE_NOISE_FREE_CALLS_05").classList.add("on");
+  }
 });
 
 gsap.to(".fix01", {
@@ -162,7 +196,7 @@ gsap.to(".main_picture01_03", {
     trigger: "#section02",
     start: "bottom bottom",
     end: "+=1200",
-    scrub: true,
+    scrub: 1,
   },
 });
 gsap.to(".main_picture02_03", {
@@ -173,7 +207,7 @@ gsap.to(".main_picture02_03", {
     trigger: "#section02",
     start: "bottom bottom",
     end: "+=1200",
-    scrub: true,
+    scrub: 1,
   },
 });
 gsap.to(".main_right_title_03", {
@@ -184,7 +218,7 @@ gsap.to(".main_right_title_03", {
     trigger: "#section02",
     start: "bottom bottom",
     end: "+=1200",
-    scrub: true,
+    scrub: 1,
   },
 });
 
@@ -195,8 +229,8 @@ gsap.to(".main_left_title_03", {
   scrollTrigger: {
     trigger: "#section02",
     start: "bottom bottom",
-    end: "+=1200",
-    scrub: true,
+    end: "+=1500",
+    scrub: 1,
   },
 });
 
@@ -208,8 +242,14 @@ gsap.to("#section04 .container", {
     end: "bottom+=1000 bottom", // 스크롤 기다리고 싶은 숫자만큼넣고 css도 변경
     pin: true,
     pinSpacing: false,
-    scrub: true,
+    scrub: 1,
   },
+});
+
+gsap.to("#section04 .picture_04", {
+  duration: 10,
+  width: 1920,
+  height: 980,
 });
 
 ////////////////////////////// section05 //////////////////////////////////////
@@ -221,7 +261,53 @@ gsap.to("#section05 .circle_text_05", {
   repeat: -1,
 });
 
+gsap.to("#section05 .title_first_05", {
+  //최종위치
+  left: 0,
+  opacity: 1,
+  scrollTrigger: {
+    trigger: "#section05",
+    start: "bottom bottom",
+    end: "+=2000",
+    scrub: 1,
+  },
+});
+
+gsap.to("#section05 .title_second_05", {
+  //최종위치
+  left: 30,
+  opacity: 1,
+  scrollTrigger: {
+    trigger: "#section05",
+    start: "bottom bottom",
+    end: "+=2000",
+    scrub: 1,
+  },
+});
+
 ////////////////////////////// section06 //////////////////////////////////////
+
+gsap.to(".title1_06", {
+  // 사진 가로 크기
+  x: -2975,
+  ease: "none",
+  duration: 20,
+  repeat: -1,
+});
+gsap.from(".title2_06", {
+  // 사진 가로 크기
+  x: -1760,
+  ease: "none",
+  duration: 20,
+  repeat: -1,
+});
+gsap.to(".title3_06", {
+  // 사진 가로 크기
+  x: -2975,
+  ease: "none",
+  duration: 20,
+  repeat: -1,
+});
 
 //////////////////////////// section07 //////////////////////////////////////
 gsap.to("#section07 .circle_line", {
