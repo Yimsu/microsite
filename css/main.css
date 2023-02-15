@@ -906,6 +906,42 @@
   top: 370px;
   right: 0px;
 }
+
+#section08 .right_text_08 {
+  position: absolute;
+  top: 800px;
+  right: 20px;
+}
+
+#section08 .plus1_08 {
+  position: absolute;
+  top: 900px;
+  left: 200px;
+}
+#section08 .plus2_08 {
+  position: absolute;
+  top: 1000px;
+  left: 500px;
+}
+#section08 .plus3_08 {
+  position: absolute;
+  top: 1200px;
+  left: 350px;
+}
+
+#section08 .left_text_08 {
+  position: absolute;
+  top: 1570px;
+  left: 140px;
+}
+#section08 .bottom_text_08 {
+  position: absolute;
+  top: 1740px;
+  left: 140px;
+}
+#section08 .bottom_text_08 li + li {
+  margin-top: 8px;
+}
 /*************************************************************/
 
 #section09 {
