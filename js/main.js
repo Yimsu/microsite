@@ -355,6 +355,15 @@ gsap.to(".circle_text_04", {
   repeat: -1,
 });
 
+
+gsap.to(".floating > img", {
+  duration: 2, 
+  yoyo: true,
+  y: -20,
+  yoyoEase: 'power2.in',
+  repeat: -1
+});
+
 // gsap.to('.sticky-parent', {
 //   // x: -innerWidth*3,
 //   scrollTrigger: {
