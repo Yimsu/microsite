@@ -364,6 +364,14 @@ gsap.to(".floating > img", {
   repeat: -1
 });
 
+gsap.to(".blinking > img", {
+  duration: 2, 
+  yoyo: true,
+  opacity: 0,
+  yoyoEase: 'power2.in',
+  repeat: -1
+});
+
 // gsap.to('.sticky-parent', {
 //   // x: -innerWidth*3,
 //   scrollTrigger: {
