@@ -858,15 +858,23 @@
   background: rgb(255, 255, 255);
 }
 
+#section08 .side_text_container {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 64px;
+  height: 1920px;
+  overflow: hidden;
+}
+
 /* 연속으로 텍스트 넘어가기(프레임 만들기) (자바스크립트도 사용)*/
 #section08 .side_text_08 {
   position: absolute;
   left: 10px;
   width: 64px;
   /* height: 585px; */
-  height: 1755px;
+  height: 2400px;
   /* 사이즈(w,h 사이즈) 바깥으로 나가는 것 잘라주기 */
-  overflow: hidden;
 }
 
 #section08 .title_08 {
