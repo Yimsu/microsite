@@ -64,6 +64,14 @@ window.addEventListener("scroll", () => {
   if (scrollTop > 8300) {
     $(".TAKE_NOISE_FREE_CALLS_05").classList.add("on");
   }
+
+  if (scrollTop > 8300) {
+    $(".TAKE_NOISE_FREE_CALLS_05").classList.add("on");
+  }
+
+  if (scrollTop > 9511) {
+    $("#section06").classList.add("off");
+  }
 });
 
 gsap.to(".fix01", {
@@ -355,21 +363,20 @@ gsap.to(".circle_text_04", {
   repeat: -1,
 });
 
-
 gsap.to(".floating > img", {
-  duration: 2, 
+  duration: 2,
   yoyo: true,
   y: -20,
-  yoyoEase: 'power2.in',
-  repeat: -1
+  yoyoEase: "power2.in",
+  repeat: -1,
 });
 
 gsap.to(".blinking > img", {
-  duration: 2, 
+  duration: 2,
   yoyo: true,
   opacity: 0,
-  yoyoEase: 'power2.in',
-  repeat: -1
+  yoyoEase: "power2.in",
+  repeat: -1,
 });
 
 // gsap.to('.sticky-parent', {

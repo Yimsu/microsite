@@ -661,6 +661,13 @@
   overflow: hidden;
 }
 
+#section06.off {
+  height: 100vh;
+  width: 1920px;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+}
+
 #section06 .title1_06 {
   display: flex;
   position: absolute;
