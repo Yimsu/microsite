@@ -71,6 +71,8 @@ window.addEventListener("scroll", () => {
 
   if (scrollTop > 9511) {
     $("#section06").classList.add("off");
+  } else {
+    $("#section06").classList.remove("off");
   }
 });
 
