@@ -69,7 +69,7 @@ window.addEventListener("scroll", () => {
     $(".TAKE_NOISE_FREE_CALLS_05").classList.add("on");
   }
 
-  if (scrollTop > 9200) {
+  if (scrollTop > 9500) {
     $("#section06").classList.add("off");
   } else {
     $("#section06").classList.remove("off");
