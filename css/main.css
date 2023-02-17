@@ -655,6 +655,7 @@
 
 /************************ section06 **************************/
 #section06 {
+  display: relative;
   height: 100vh;
   width: 1920px;
   background: rgb(255, 255, 255);
@@ -669,7 +670,25 @@
   overflow: hidden;
 }
 
-#section06 .title1_06 {
+#section06 .image.off {
+  opacity: 0;
+}
+
+#section06 .title.off {
+  opacity: 0;
+}
+
+#section06 .title1_on_06 {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 33%;
+  transform: translate(-50%, -33%);
+  width: 100vw;
+  height: 113px;
+  z-index: 100;
+}
+#section06 .title1_off_06 {
   display: flex;
   position: absolute;
   left: 50%;
@@ -680,7 +699,17 @@
   z-index: 100;
 }
 
-#section06 .title2_06 {
+#section06 .title2_on_06 {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 121px;
+  z-index: 100;
+}
+#section06 .title2_off_06 {
   display: flex;
   position: absolute;
   left: 50%;
@@ -691,7 +720,17 @@
   z-index: 100;
 }
 
-#section06 .title3_06 {
+#section06 .title3_on_06 {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 67%;
+  transform: translate(-50%, -67%);
+  width: 100vw;
+  height: 113px;
+  z-index: 100;
+}
+#section06 .title3_off_06 {
   display: flex;
   position: absolute;
   left: 50%;
@@ -702,27 +741,59 @@
   z-index: 100;
 }
 
-#section06 .image1_06 {
+#section06 .image1_on_06 {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 100;
 }
-#section06 .image2_06 {
+#section06 .image1_off_06 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+#section06 .image2_on_06 {
   position: absolute;
   left: 20%;
   top: 15%;
   transform: translate(-20%, -15%);
   z-index: 100;
 }
-#section06 .image3_06 {
+#section06 .image2_off_06 {
+  position: absolute;
+  left: 20%;
+  top: 15%;
+  transform: translate(-20%, -15%);
+  z-index: 100;
+}
+
+#section06 .image2_off_06 {
+  position: absolute;
+  left: 20%;
+  top: 15%;
+  transform: translate(-20%, -15%);
+  z-index: 100;
+}
+
+#section06 .image3_on_06 {
   position: absolute;
   right: 15%;
   top: 85%;
   transform: translate(-15%, -85%);
   z-index: 100;
 }
+#section06 .image3_off_06 {
+  position: absolute;
+  right: 15%;
+  top: 85%;
+  transform: translate(-15%, -85%);
+  z-index: 100;
+}
+
 #section06 .line1_06 {
   position: absolute;
   left: 50%;
@@ -752,19 +823,34 @@
   left: 50px;
   bottom: 40px;
 }
-#section06 .on_background_06 {
+#section06 .on_background_on_06 {
   position: absolute;
   right: 50px;
   top: 70px;
 }
-#section06 .on_circle_06 {
+#section06 .on_background_off_06 {
+  position: absolute;
+  right: 50px;
+  top: 70px;
+}
+#section06 .on_circle_on_06 {
   position: absolute;
   right: 60px;
+  top: 77px;
+}
+#section06 .on_circle_off_06 {
+  position: absolute;
+  right: 179px;
   top: 77px;
 }
 #section06 .on_06 {
   position: absolute;
   right: 130px;
+  top: 86px;
+}
+#section06 .off_06 {
+  position: absolute;
+  right: 65px;
   top: 86px;
 }
 
@@ -958,8 +1044,8 @@
 #section08 .bottom_text_08 li + li {
   margin-top: 8px;
 }
-/*************************************************************/
 
+/******************* section09  *******************************/
 #section09 {
   /* 기다리고싶은 숫자만큼 변경 */
   height: calc(100vh + 1548px - 370px + 1000px);
@@ -968,11 +1054,33 @@
   /* 기다리고싶은 숫자만큼 변경 */
   padding-top: calc((1548px - 598px) + 1000px);
 }
+
+/************************ section10  *****************************/
 #section10 {
+  position: relative;
   height: 100vh;
   width: 1920px;
-  background: rgb(52, 181, 23);
+  background-image: url(../img/part3-3/8ee275133472299.61d298ea6d4d4.gif);
+  background-position: center;
+  background-size: cover;
 }
+
+#section10 .glossy_title_10 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#section10 .glossy_title_10 li + li {
+  margin-top: 40px;
+}
+
+#section10 .glossy_10 {
+  margin-left: 20px;
+}
+
+/************************ section10  **************************/
 #section11 {
   height: 100vh;
   width: 1920px;

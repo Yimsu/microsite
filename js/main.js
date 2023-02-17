@@ -74,6 +74,76 @@ window.addEventListener("scroll", () => {
   } else {
     $("#section06").classList.remove("off");
   }
+
+  if (scrollTop > 9500) {
+    $(".image1_on_06").classList.add("off");
+    $(".image1_off_06").classList.remove("off");
+  } else {
+    $(".image1_off_06").classList.add("off");
+    $(".image1_on_06").classList.remove("off");
+  }
+
+  if (scrollTop > 9500) {
+    $(".image2_on_06").classList.add("off");
+    $(".image2_off_06").classList.remove("off");
+  } else {
+    $(".image2_off_06").classList.add("off");
+    $(".image2_on_06").classList.remove("off");
+  }
+
+  if (scrollTop > 9500) {
+    $(".image3_on_06").classList.add("off");
+    $(".image3_off_06").classList.remove("off");
+  } else {
+    $(".image3_off_06").classList.add("off");
+    $(".image3_on_06").classList.remove("off");
+  }
+
+  if (scrollTop > 9500) {
+    $(".title1_on_06").classList.add("off");
+    $(".title1_off_06").classList.remove("off");
+  } else {
+    $(".title1_off_06").classList.add("off");
+    $(".title1_on_06").classList.remove("off");
+  }
+  if (scrollTop > 9500) {
+    $(".title2_on_06").classList.add("off");
+    $(".title2_off_06").classList.remove("off");
+  } else {
+    $(".title2_off_06").classList.add("off");
+    $(".title2_on_06").classList.remove("off");
+  }
+  if (scrollTop > 9500) {
+    $(".title3_on_06").classList.add("off");
+    $(".title3_off_06").classList.remove("off");
+  } else {
+    $(".title3_off_06").classList.add("off");
+    $(".title3_on_06").classList.remove("off");
+  }
+
+  if (scrollTop > 9500) {
+    $(".on_background_on_06").classList.add("off");
+    $(".on_background_off_06").classList.remove("off");
+  } else {
+    $(".on_background_off_06").classList.add("off");
+    $(".on_background_on_06").classList.remove("off");
+  }
+
+  if (scrollTop > 9500) {
+    $(".on_circle_on_06").classList.add("off");
+    $(".on_circle_off_06").classList.remove("off");
+  } else {
+    $(".on_circle_off_06").classList.add("off");
+    $(".on_circle_on_06").classList.remove("off");
+  }
+
+  if (scrollTop > 9500) {
+    $(".on_06").classList.add("off");
+    $(".off_06").classList.remove("off");
+  } else {
+    $(".off_06").classList.add("off");
+    $(".on_06").classList.remove("off");
+  }
 });
 
 gsap.to(".fix01", {
@@ -297,21 +367,42 @@ gsap.to("#section05 .title_second_05", {
 
 ////////////////////////////// section06 //////////////////////////////////////
 
-gsap.to(".title1_06", {
+gsap.to(".title1_on_06", {
   // 사진 가로 크기
   x: -2975,
   ease: "none",
   duration: 20,
   repeat: -1,
 });
-gsap.from(".title2_06", {
+gsap.to(".title1_off_06", {
+  // 사진 가로 크기
+  x: -2975,
+  ease: "none",
+  duration: 20,
+  repeat: -1,
+});
+gsap.from(".title2_on_06", {
   // 사진 가로 크기
   x: -1760,
   ease: "none",
   duration: 20,
   repeat: -1,
 });
-gsap.to(".title3_06", {
+gsap.from(".title2_off_06", {
+  // 사진 가로 크기
+  x: -1760,
+  ease: "none",
+  duration: 20,
+  repeat: -1,
+});
+gsap.to(".title3_on_06", {
+  // 사진 가로 크기
+  x: -2975,
+  ease: "none",
+  duration: 20,
+  repeat: -1,
+});
+gsap.to(".title3_off_06", {
   // 사진 가로 크기
   x: -2975,
   ease: "none",
