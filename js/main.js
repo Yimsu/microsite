@@ -30,6 +30,11 @@ window.addEventListener("scroll", () => {
   if (scrollTop > 6400) {
     $(".title2_04").classList.add("on");
   }
+  if (scrollTop > 6400) {
+    $(".picture_04").classList.add("on");
+  } else {
+    $(".picture_04").classList.remove("on");
+  }
 
   if (scrollTop > 7600) {
     $(".picture1_05").classList.add("on");
@@ -143,6 +148,19 @@ window.addEventListener("scroll", () => {
   } else {
     $(".off_06").classList.add("off");
     $(".on_06").classList.remove("off");
+  }
+
+  if (scrollTop > 10500) {
+    $(".image_07").classList.add("on");
+  } else {
+    $(".image_07").classList.remove("on");
+  }
+
+  if (scrollTop > 10300) {
+    $(".title1_07").classList.add("on");
+  }
+  if (scrollTop > 10400) {
+    $(".title2_07").classList.add("on");
   }
 });
 
@@ -456,16 +474,34 @@ gsap.to(".circle_text_04", {
   repeat: -1,
 });
 
-gsap.to(".floating > img", {
-  duration: 2,
+// gsap.to(".floating > img", {
+//   duration: 2,
+//   yoyo: true,
+//   y: -20,
+//   yoyoEase: "power2.in",
+//   repeat: -1,
+// });
+
+gsap.to(".blinking01", {
+  duration: 1,
   yoyo: true,
-  y: -20,
+  delay: 0.5,
+  opacity: 0,
   yoyoEase: "power2.in",
   repeat: -1,
 });
 
-gsap.to(".blinking > img", {
-  duration: 2,
+gsap.to(".blinking02", {
+  duration: 1,
+  yoyo: true,
+  opacity: 0,
+  delay: 0.8,
+  yoyoEase: "power2.in",
+  repeat: -1,
+});
+
+gsap.to(".blinking03", {
+  duration: 1,
   yoyo: true,
   opacity: 0,
   yoyoEase: "power2.in",

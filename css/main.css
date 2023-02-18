@@ -151,7 +151,7 @@
 
 #section01 .main_text_01 {
   position: absolute;
-  top: 161px;
+  top: 156px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 150;
@@ -312,7 +312,7 @@
 #section04 .slide1 {
   width: 100vw;
   height: 100vh;
-  background-image: url(../img/part1-4/picture.gif);
+  /* background-image: url(../img/part1-4/picture.gif); */
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -342,13 +342,32 @@
   height: 100vh;
 }
 
-/* #section04 .picture_04 {
+#section04 .picture_04 {
   position: absolute;
-  top: 50%;
+  left: -548px;
+  top: -380px;
+  transform-origin: center;
+  /* top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -10;
-} */
+  transform: translate(-50%, -50%); */
+  /* z-index: -10; */
+}
+#section04 .picture_04 > img {
+  width: 100vw;
+  height: 100vh;
+  /* 모서리 둥글게 */
+  border-radius: 30px;
+
+  /* 내가 지정한 너비 높이값에 이미지가 꽉차게 */
+  object-fit: cover;
+
+  transform: scale(0.9);
+  transition: all 0.7s;
+}
+#section04 .picture_04.on > img {
+  transform: scale(1);
+  border-radius: 0;
+}
 
 #section04 .maintitle04 {
   position: absolute;
@@ -763,6 +782,7 @@
   transform: translate(-20%, -15%);
   z-index: 100;
 }
+
 #section06 .image2_off_06 {
   position: absolute;
   left: 20%;
@@ -859,10 +879,20 @@
   position: relative;
   height: 100vh;
   width: 1920px;
-  background-image: url(../img/part2-3/64f557133472299.61d298ef930b0.gif);
+  /* background-image: url(../img/part2-3/64f557133472299.61d298ef930b0.gif);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+  background-color: black;
   overflow: hidden;
+}
+
+#section07 .image_07 {
+  transform: rotate(90deg);
+  transition: all 0.9s;
+}
+
+#section07 .image_07.on {
+  transform: rotate(0deg);
 }
 
 #section07 .title1_07 {
@@ -870,6 +900,17 @@
   left: 21%;
   top: 42%;
   transform: translate(-21%, -42%);
+  height: 93px;
+  overflow: hidden;
+}
+#section07 .title1_07 img {
+  transform: translateY(93px);
+  transition: 1s;
+}
+
+/* 이미지가 화면에 나타남 */
+#section07 .title1_07.on img {
+  transform: translateY(0);
 }
 
 #section07 .title2_07 {
@@ -877,6 +918,17 @@
   left: 70%;
   top: 58%;
   transform: translate(-70%, -58%);
+  height: 101px;
+  overflow: hidden;
+}
+#section07 .title2_07 img {
+  transform: translateY(101px);
+  transition: 1s;
+}
+
+/* 이미지가 화면에 나타남 */
+#section07 .title2_07.on img {
+  transform: translateY(0);
 }
 
 #section07 .text_07 {
