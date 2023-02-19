@@ -879,21 +879,21 @@
   position: relative;
   height: 100vh;
   width: 1920px;
-  /* background-image: url(../img/part2-3/64f557133472299.61d298ef930b0.gif);
+  background-image: url(../img/part2-3/64f557133472299.61d298ef930b0.gif);
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
   background-color: black;
   overflow: hidden;
 }
 
-#section07 .image_07 {
+/* #section07 .image_07 {
   transform: rotate(90deg);
   transition: all 0.9s;
 }
 
 #section07 .image_07.on {
   transform: rotate(0deg);
-}
+} */
 
 #section07 .title1_07 {
   position: absolute;
@@ -1132,17 +1132,64 @@
   margin-left: 20px;
 }
 
-/************************ section10  **************************/
+/************************ section11  **************************/
 #section11 {
   height: 100vh;
   width: 1920px;
-  background: rgb(35, 57, 223);
+  background-image: url(../img/part3-4/background.jpg);
 }
+
+#section11 .color_11 {
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#section11 .line {
+  position: absolute;
+  top: 380px;
+  width: 1920px;
+  height: 1px;
+  background-color: rgb(227, 227, 227);
+  /* 라인 만들기 (코드로 작성 할 수 있는 것은 코드로 작성해주는 것이 이미지를 넣는것보다 나음)*/
+}
+
+#section11 .color_text_all_11 {
+  position: absolute;
+  top: 400px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#section11 .long_text_11 {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
+#section11 .circle_text_11 {
+  position: absolute;
+  right: 100px;
+  top: 50px;
+}
+#section11 .arrow_11 {
+  position: absolute;
+  right: 190px;
+  top: 142px;
+}
+#section11 .image01_11 {
+  position: absolute;
+  right: 100px;
+  bottom: 100px;
+}
+
+/************************ section12  **************************/
 #section12 {
   height: 100vh;
   width: 1920px;
   background: rgb(193, 12, 72);
 }
+/************************ section13  **************************/
 #section13 {
   height: 100vh;
   width: 1920px;

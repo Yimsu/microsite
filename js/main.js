@@ -150,11 +150,11 @@ window.addEventListener("scroll", () => {
     $(".on_06").classList.remove("off");
   }
 
-  if (scrollTop > 10500) {
-    $(".image_07").classList.add("on");
-  } else {
-    $(".image_07").classList.remove("on");
-  }
+  // if (scrollTop > 10500) {
+  //   $(".image_07").classList.add("on");
+  // } else {
+  //   $(".image_07").classList.remove("on");
+  // }
 
   if (scrollTop > 10300) {
     $(".title1_07").classList.add("on");
