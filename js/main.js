@@ -162,6 +162,12 @@ window.addEventListener("scroll", () => {
   if (scrollTop > 10400) {
     $(".title2_07").classList.add("on");
   }
+
+  if (scrollTop > 18970) {
+    $(".image01_11").classList.add("on");
+  } else {
+    $(".image01_11").classList.remove("on");
+  }
 });
 
 gsap.to(".fix01", {
@@ -505,6 +511,33 @@ gsap.to(".blinking03", {
   yoyo: true,
   opacity: 0,
   yoyoEase: "power2.in",
+  repeat: -1,
+});
+
+/////////////////////////// section11 //////////////////////////////////////
+gsap.to("#circle_text_11", {
+  // 몇도 돌아갈건지
+  rotation: 360,
+  // 가속도
+  ease: "none",
+  // 몇초에 한번씩 돌아갈건지 (속도)
+  duration: 8,
+  // -1은 무한대로 돌아가는 것
+  repeat: -1,
+});
+
+gsap.to(".contact_footer", {
+  // 사진 가로 크기
+  x: -1549,
+  ease: "none",
+  duration: 4,
+  repeat: -1,
+});
+
+gsap.to("#circle_text_footer", {
+  rotation: 360,
+  ease: "none",
+  duration: 8,
   repeat: -1,
 });
 

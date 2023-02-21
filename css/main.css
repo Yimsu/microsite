@@ -1099,6 +1099,7 @@
 
 /******************* section09  *******************************/
 #section09 {
+  /* background-color: #e1e1e1; */
   /* 기다리고싶은 숫자만큼 변경 */
   height: calc(100vh + 1548px - 370px + 1000px);
   width: 1920px;
@@ -1134,7 +1135,7 @@
 
 /************************ section11  **************************/
 #section11 {
-  height: 100vh;
+  height: 1800px;
   width: 1920px;
   background-image: url(../img/part3-4/background.jpg);
 }
@@ -1144,6 +1145,7 @@
   top: 250px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 100;
 }
 
 #section11 .line {
@@ -1152,7 +1154,7 @@
   width: 1920px;
   height: 1px;
   background-color: rgb(227, 227, 227);
-  /* 라인 만들기 (코드로 작성 할 수 있는 것은 코드로 작성해주는 것이 이미지를 넣는것보다 나음)*/
+  z-index: 100;
 }
 
 #section11 .color_text_all_11 {
@@ -1160,27 +1162,66 @@
   top: 400px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 100;
 }
 
 #section11 .long_text_11 {
   position: absolute;
-  bottom: 50px;
+  top: 800px;
   left: 50px;
+  z-index: 100;
 }
 #section11 .circle_text_11 {
   position: absolute;
+  /* position: fixed; */
   right: 100px;
   top: 50px;
+  width: 222px;
+  height: 221px;
+  z-index: 200;
 }
 #section11 .arrow_11 {
   position: absolute;
   right: 190px;
   top: 142px;
+  z-index: 100;
 }
-#section11 .image01_11 {
+/* #section11 .image01_11 {
   position: absolute;
-  right: 100px;
-  bottom: 100px;
+  right: 20px;
+  bottom: 20px;
+} */
+
+/* #section11 .image01_11 {
+  position: absolute;
+  right: 1px;
+  bottom: 1px;
+  transform: scale(0.2);
+  transition: all 0.7s;
+  transform-origin: center;
+} */
+/* #section11 .image01_11.on > img {
+  transform: scale(1);
+  border-radius: 0;
+} */
+
+#section11 .take_11 {
+  position: absolute;
+  left: -1000px;
+  top: 1150px;
+  z-index: 100;
+}
+#section11 .noise_free_11 {
+  position: absolute;
+  left: -1700px;
+  top: 1300px;
+  z-index: 100;
+}
+#section11 .calls_11 {
+  position: absolute;
+  left: -1000px;
+  top: 1450px;
+  z-index: 100;
 }
 
 /************************ section12  **************************/
@@ -1195,7 +1236,94 @@
   width: 1920px;
   background: rgb(183, 252, 45);
 }
+/************************ section14 **************************/
+#section14 {
+  height: 100vh;
+  width: 1920px;
+  background: rgb(41, 127, 255);
+}
+/************************ footer  **************************/
+#footer {
+  position: relative;
+  height: 780px;
+  width: 1920px;
+  background: rgb(11, 12, 12);
+}
 
+#footer .contact_footer {
+  display: flex;
+  position: absolute;
+  top: 100px;
+  width: 100vw;
+  height: 205px;
+  /* overflow: hidden; */
+}
+
+#footer .circle_text_footer {
+  position: absolute;
+  bottom: 70px;
+  right: 80px;
+  width: 222px;
+  height: 221px;
+  z-index: 100;
+}
+
+#footer .arrow_footer {
+  position: absolute;
+  bottom: 145px;
+  right: 170px;
+  z-index: 100;
+}
+#footer .samsung_footer {
+  position: absolute;
+  top: 500px;
+  left: 150px;
+}
+#footer .email_footer {
+  position: absolute;
+  top: 600px;
+  left: 150px;
+}
+#footer .email_line {
+  position: absolute;
+  top: 640px;
+  left: 150px;
+  width: 300px;
+  height: 2px;
+  background-color: rgb(227, 227, 227);
+  z-index: 100;
+}
+#footer .united_states_footer {
+  position: absolute;
+  top: 600px;
+  left: 500px;
+}
+#footer .united_states_line {
+  position: absolute;
+  top: 640px;
+  left: 500px;
+  width: 300px;
+  height: 2px;
+  background-color: rgb(227, 227, 227);
+  z-index: 100;
+}
+#footer .small_arrow_footer {
+  position: absolute;
+  top: 610px;
+  left: 840px;
+}
+#footer .linkedin_footer {
+  position: absolute;
+  top: 500px;
+  left: 950px;
+}
+#footer .samsung_text_footer {
+  position: absolute;
+  top: 500px;
+  left: 1150px;
+}
+
+/****************************************************/
 .sticky-parent {
   height: 700vh;
 }
