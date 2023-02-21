@@ -18,3 +18,11 @@ function toggleMenu() {
     showMenu();
   }
 }
+
+gsap.to(".galaxy_buds_pro", {
+  // 사진 가로 크기
+  y: -1732,
+  ease: "none",
+  duration: 8,
+  repeat: -1,
+});

@@ -162,11 +162,27 @@ window.addEventListener("scroll", () => {
   if (scrollTop > 10400) {
     $(".title2_07").classList.add("on");
   }
+  if (scrollTop > 1800) {
+    $(".line_11").classList.add("on");
+  } else {
+    $(".line_11").classList.remove("on");
+  }
 
   if (scrollTop > 18970) {
     $(".image01_11").classList.add("on");
   } else {
     $(".image01_11").classList.remove("on");
+  }
+
+  if (scrollTop > 23500) {
+    $(".email_line").classList.add("on");
+  } else {
+    $(".email_line").classList.remove("on");
+  }
+  if (scrollTop > 23500) {
+    $(".united_states_line").classList.add("on");
+  } else {
+    $(".united_states_line").classList.remove("on");
   }
 });
 
@@ -515,14 +531,10 @@ gsap.to(".blinking03", {
 });
 
 /////////////////////////// section11 //////////////////////////////////////
-gsap.to("#circle_text_11", {
-  // 몇도 돌아갈건지
+gsap.to(".circle_text_11", {
   rotation: 360,
-  // 가속도
   ease: "none",
-  // 몇초에 한번씩 돌아갈건지 (속도)
-  duration: 8,
-  // -1은 무한대로 돌아가는 것
+  duration: 10,
   repeat: -1,
 });
 
@@ -534,10 +546,10 @@ gsap.to(".contact_footer", {
   repeat: -1,
 });
 
-gsap.to("#circle_text_footer", {
+gsap.to("#footer .circle_text_footer", {
   rotation: 360,
   ease: "none",
-  duration: 8,
+  duration: 15,
   repeat: -1,
 });
 

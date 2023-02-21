@@ -1069,7 +1069,7 @@
 
 #section08 .plus1_08 {
   position: absolute;
-  top: 900px;
+  top: 800px;
   left: 200px;
 }
 #section08 .plus2_08 {
@@ -1081,6 +1081,11 @@
   position: absolute;
   top: 1200px;
   left: 350px;
+}
+#section08 .plus4_08 {
+  position: absolute;
+  top: 1600px;
+  right: 350px;
 }
 
 #section08 .left_text_08 {
@@ -1148,20 +1153,29 @@
   z-index: 100;
 }
 
-#section11 .line {
+#section11 .line_11 {
+  position: absolute;
+  top: 380px;
+  width: 0;
+  height: 1px;
+  background-color: rgb(227, 227, 227);
+  z-index: 100;
+}
+#section11 .line_11.on {
   position: absolute;
   top: 380px;
   width: 1920px;
   height: 1px;
   background-color: rgb(227, 227, 227);
+  transition: all 0.9s;
   z-index: 100;
 }
 
 #section11 .color_text_all_11 {
   position: absolute;
   top: 400px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  /* transform: translateX(-50%); */
   z-index: 100;
 }
 
@@ -1288,10 +1302,18 @@
   position: absolute;
   top: 640px;
   left: 150px;
+  width: 0;
+  height: 2px;
+  background-color: rgb(227, 227, 227);
+}
+#footer .email_line.on {
+  position: absolute;
+  top: 640px;
+  left: 150px;
   width: 300px;
   height: 2px;
   background-color: rgb(227, 227, 227);
-  z-index: 100;
+  transition: all 0.9s;
 }
 #footer .united_states_footer {
   position: absolute;
@@ -1302,10 +1324,18 @@
   position: absolute;
   top: 640px;
   left: 500px;
+  width: 0;
+  height: 2px;
+  background-color: rgb(227, 227, 227);
+}
+#footer .united_states_line.on {
+  position: absolute;
+  top: 640px;
+  left: 500px;
   width: 300px;
   height: 2px;
   background-color: rgb(227, 227, 227);
-  z-index: 100;
+  transition: all 0.9s;
 }
 #footer .small_arrow_footer {
   position: absolute;

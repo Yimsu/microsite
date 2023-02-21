@@ -1,16 +1,3 @@
-#menu {
-  position: fixed;
-  left: calc(50vw - 500px);
-  top: calc(50vh - 250px);
-
-  width: 1000px;
-  height: 500px;
-
-  background-color: blue;
-
-  z-index: 99999;
-}
-
 #menu-overlay {
   display: none;
 
@@ -23,10 +10,113 @@
 
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(4px);
-
   z-index: 99999;
 }
 
+#menu {
+  position: fixed;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 1765px;
+  height: 839px;
+
+  background-color: #282727;
+  border-radius: 40px;
+  z-index: 99999;
+}
+
+/* .menu_background {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+} */
+
 #menu-overlay.active {
   display: block;
+}
+
+#menu-overlay .x_button {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+}
+
+#menu .galaxy_buds_pro {
+  /* flex-direction: column; */
+  position: absolute;
+  left: 0;
+  width: 121px;
+  height: 1732px;
+  overflow: hidden;
+}
+
+/* 호버하기 전 이미지 */
+.hover_home {
+  position: absolute;
+  top: 150px;
+  right: 200px;
+  background: url(../img/menu/home_gray.png);
+  width: 315px;
+  height: 74px;
+  /* 호버하고 1초만에 바뀜 */
+  transition: 0.3s;
+}
+/* 호버 한 후 이미지 */
+.hover_home:hover {
+  background: url(../img/menu/home_white.png);
+  transform: scale(1.2);
+  transition: all 0.7s;
+}
+
+.hover_about {
+  position: absolute;
+  top: 300px;
+  right: 200px;
+  background: url(../img/menu/about_gray.png);
+  width: 416px;
+  height: 74px;
+  /* 호버하고 1초만에 바뀜 */
+  transition: 0.3s;
+}
+.hover_about:hover {
+  background: url(../img/menu/about_white.png);
+  transform: scale(1.2);
+  transition: all 0.7s;
+}
+
+.hover_color {
+  position: absolute;
+  top: 450px;
+  right: 200px;
+  background: url(../img/menu/color_gray.png);
+  width: 411px;
+  height: 74px;
+  /* 호버하고 1초만에 바뀜 */
+  transition: 0.3s;
+}
+.hover_color:hover {
+  background: url(../img/menu/color_white.png);
+  transform: scale(1.2);
+  transition: all 0.7s;
+}
+
+.hover_contact {
+  position: absolute;
+  top: 600px;
+  right: 200px;
+  background: url(../img/menu/contact_gray.png);
+  width: 568px;
+  height: 74px;
+  /* 호버하고 1초만에 바뀜 */
+  transition: 0.3s;
+}
+.hover_contact:hover {
+  background: url(../img/menu/contact_white.png);
+  transform: scale(1.2);
+  transition: all 0.7s;
 }
