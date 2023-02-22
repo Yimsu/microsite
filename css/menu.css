@@ -9,7 +9,7 @@
   height: 100vh;
 
   background-color: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(6px);
   z-index: 99999;
 }
 
@@ -22,6 +22,7 @@
 
   width: 1765px;
   height: 839px;
+  overflow: hidden;
 
   background-color: #282727;
   border-radius: 40px;
@@ -50,73 +51,235 @@
   /* flex-direction: column; */
   position: absolute;
   left: 0;
+  /* 밑에서 위로 흐를때 해당 방향에 위치 */
+  bottom: 0;
   width: 121px;
   height: 1732px;
-  overflow: hidden;
+  animation: flow 10s linear infinite;
 }
 
-/* 호버하기 전 이미지 */
+@keyframes flow {
+  100% {
+    transform: translateY(-1732px);
+  }
+}
+
 .hover_home {
   position: absolute;
   top: 150px;
   right: 200px;
-  background: url(../img/menu/home_gray.png);
-  width: 315px;
-  height: 74px;
-  /* 호버하고 1초만에 바뀜 */
   transition: 0.3s;
 }
-/* 호버 한 후 이미지 */
-.hover_home:hover {
-  background: url(../img/menu/home_white.png);
+.hover_home .home_txt {
+  width: 315px;
+  height: 74px;
+  position: absolute;
+  left: -320px;
+  top: 0;
+  z-index: 999;
+  transition: all 0.3s;
+  /* 오른쪽 중앙부터 커지게 */
+  transform-origin: right center;
+}
+.hover_home .home_txt > div {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.hover_home .home_txt .home_after {
+  opacity: 0;
+  z-index: -1;
+}
+.hover_home:hover .home_txt {
   transform: scale(1.2);
-  transition: all 0.7s;
+}
+.hover_home:hover .home_txt .home_after {
+  opacity: 1;
+  z-index: 999;
+}
+.hover_home .home_img {
+  position: absolute;
+  left: -1120px;
+  top: -30px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.hover_home .home_arrow {
+  position: absolute;
+  left: -30px;
+  top: -20px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.hover_home:hover .home_arrow {
+  opacity: 1;
+}
+.hover_home:hover .home_img {
+  opacity: 1;
 }
 
 .hover_about {
   position: absolute;
   top: 300px;
   right: 200px;
-  background: url(../img/menu/about_gray.png);
-  width: 416px;
-  height: 74px;
-  /* 호버하고 1초만에 바뀜 */
   transition: 0.3s;
 }
-.hover_about:hover {
-  background: url(../img/menu/about_white.png);
-  transform: scale(1.2);
-  transition: all 0.7s;
+
+.hover_about .about_txt {
+  width: 416px;
+  height: 74px;
+  position: absolute;
+  left: -420px;
+  top: 0;
+  z-index: 999;
+  transition: all 0.3s;
+  transform-origin: right center;
 }
+.hover_about .about_txt > div {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.hover_about .about_txt .about_after {
+  opacity: 0;
+  z-index: -1;
+}
+.hover_about:hover .about_txt {
+  transform: scale(1.2);
+}
+.hover_about:hover .about_txt .about_after {
+  opacity: 1;
+  z-index: 999;
+}
+.hover_about .about_img {
+  position: absolute;
+  left: -1200px;
+  top: -90px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.hover_about .about_arrow {
+  position: absolute;
+  left: -30px;
+  top: -20px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.hover_about:hover .about_arrow {
+  opacity: 1;
+}
+.hover_about:hover .about_img {
+  opacity: 1;
+}
+
+/* *************************************** */
 
 .hover_color {
   position: absolute;
   top: 450px;
   right: 200px;
-  background: url(../img/menu/color_gray.png);
-  width: 411px;
-  height: 74px;
-  /* 호버하고 1초만에 바뀜 */
   transition: 0.3s;
 }
-.hover_color:hover {
-  background: url(../img/menu/color_white.png);
-  transform: scale(1.2);
-  transition: all 0.7s;
+.hover_color .color_txt {
+  width: 411px;
+  height: 74px;
+  position: absolute;
+  left: -420px;
+  top: 0;
+  z-index: 999;
+  transition: all 0.3s;
+  /* 오른쪽 중앙부터 커지게 */
+  transform-origin: right center;
 }
+.hover_color .color_txt > div {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.hover_color .color_txt .color_after {
+  opacity: 0;
+  z-index: -1;
+}
+.hover_color:hover .color_txt {
+  transform: scale(1.2);
+}
+.hover_color:hover .color_txt .color_after {
+  opacity: 1;
+  z-index: 999;
+}
+.hover_color .color_img {
+  position: absolute;
+  left: -1200px;
+  top: -200px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.hover_color .color_arrow {
+  position: absolute;
+  left: -30px;
+  top: -20px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.hover_color:hover .color_arrow {
+  opacity: 1;
+}
+.hover_color:hover .color_img {
+  opacity: 1;
+}
+
+/* *************************************** */
 
 .hover_contact {
   position: absolute;
   top: 600px;
   right: 200px;
-  background: url(../img/menu/contact_gray.png);
-  width: 568px;
-  height: 74px;
-  /* 호버하고 1초만에 바뀜 */
   transition: 0.3s;
 }
-.hover_contact:hover {
-  background: url(../img/menu/contact_white.png);
+.hover_contact .contact_txt {
+  width: 411px;
+  height: 74px;
+  position: absolute;
+  left: -570px;
+  top: 0;
+  z-index: 999;
+  transition: all 0.3s;
+  /* 오른쪽 중앙부터 커지게 */
+  transform-origin: right center;
+}
+.hover_contact .contact_txt > div {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.hover_contact .contact_txt .contact_after {
+  opacity: 0;
+  z-index: -1;
+}
+.hover_contact:hover .contact_txt {
   transform: scale(1.2);
-  transition: all 0.7s;
+}
+.hover_contact:hover .contact_txt .contact_after {
+  opacity: 1;
+  z-index: 999;
+}
+.hover_contact .contact_img {
+  position: absolute;
+  left: -1300px;
+  top: -300px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.hover_contact .contact_arrow {
+  position: absolute;
+  left: -30px;
+  top: -20px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.hover_contact:hover .contact_arrow {
+  opacity: 1;
+}
+.hover_contact:hover .contact_img {
+  opacity: 1;
 }

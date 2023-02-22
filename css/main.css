@@ -1104,13 +1104,23 @@
 
 /******************* section09  *******************************/
 #section09 {
-  /* background-color: #e1e1e1; */
+  position: relative;
   /* 기다리고싶은 숫자만큼 변경 */
   height: calc(100vh + 1548px - 370px + 1000px);
   width: 1920px;
   /* section09 시작 */
   /* 기다리고싶은 숫자만큼 변경 */
   padding-top: calc((1548px - 598px) + 1000px);
+  /* background-color: #e1e1e1; */
+  background-color: rgb(15, 67, 67);
+  z-index: -1;
+}
+#section09 .galaxy01_09 {
+  position: absolute;
+  top: 700px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10000;
 }
 
 /************************ section10  *****************************/
@@ -1200,24 +1210,16 @@
   top: 142px;
   z-index: 100;
 }
-/* #section11 .image01_11 {
+#section11 .image01_11 {
+  width: 100vw;
+  height: 100vh;
   position: absolute;
-  right: 20px;
-  bottom: 20px;
-} */
-
-/* #section11 .image01_11 {
-  position: absolute;
-  right: 1px;
-  bottom: 1px;
-  transform: scale(0.2);
-  transition: all 0.7s;
-  transform-origin: center;
-} */
-/* #section11 .image01_11.on > img {
-  transform: scale(1);
-  border-radius: 0;
-} */
+  left: 0;
+  top: 0;
+  transform-origin: left top;
+  transform: scale(0.3);
+  opacity: 0;
+}
 
 #section11 .take_11 {
   position: absolute;

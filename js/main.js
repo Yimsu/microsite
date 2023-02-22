@@ -168,12 +168,6 @@ window.addEventListener("scroll", () => {
     $(".line_11").classList.remove("on");
   }
 
-  if (scrollTop > 18970) {
-    $(".image01_11").classList.add("on");
-  } else {
-    $(".image01_11").classList.remove("on");
-  }
-
   if (scrollTop > 23500) {
     $(".email_line").classList.add("on");
   } else {
@@ -551,6 +545,35 @@ gsap.to("#footer .circle_text_footer", {
   ease: "none",
   duration: 15,
   repeat: -1,
+});
+
+// gsap.to('#section11 .image01_11', {
+
+//   opacity:1,
+//   scale:1,
+//   scrollTrigger: {
+//     trigger: "#section11",
+//     start: "top top",
+//     end: 'bottom bottom',
+//     scrub: true,
+//   }
+// });
+
+const tl = gsap.timeline();
+
+tl.to("#section11 .image01_11", { opacity: 1, scale: 1 });
+tl.to("#section11 .image01_11", {
+  transformOrigin: "right bottom",
+  scale: 0.3,
+  opacity: 0,
+});
+
+ScrollTrigger.create({
+  animation: tl,
+  trigger: "#section11",
+  start: "top top",
+  end: "+=800",
+  scrub: 1,
 });
 
 // gsap.to('.sticky-parent', {
