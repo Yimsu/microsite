@@ -547,6 +547,10 @@ gsap.to("#footer .circle_text_footer", {
   repeat: -1,
 });
 
+$(".circle_text_footer").addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
+
 // gsap.to('#section11 .image01_11', {
 
 //   opacity:1,
