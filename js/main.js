@@ -542,7 +542,7 @@ gsap.to(".contact_footer", {
   // 사진 가로 크기
   x: -1549,
   ease: "none",
-  duration: 4,
+  duration: 8,
   repeat: -1,
 });
 
