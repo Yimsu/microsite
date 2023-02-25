@@ -6,29 +6,83 @@ const $ = (selector) => document.querySelector(selector);
 
 window.addEventListener("scroll", () => {
   let scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+  console.log(scrollTop);
+
+  const createScrollTrap = (name, offset) => {
+    let count = 0;
+
+    const onWheel = (e) => {
+      console.log(count);
+      if (e.deltaY > 0) {
+        count++;
+
+        if (count >= 100) {
+          cleanUp();
+        }
+      } else {
+        cleanUp();
+      }
+    };
+
+    const cleanUp = () => {
+      scroller.paused(false);
+      document.body.removeEventListener("mousewheel", onWheel);
+    };
+
+    if (scrollTop > offset) {
+      if (window[name] === undefined) {
+        window[name] = {
+          onWheel,
+          cleanUp,
+          top: scrollTop,
+        };
+
+        scroller.paused(true);
+
+        document.body.addEventListener("mousewheel", onWheel);
+      }
+    }
+    if (scrollTop <= window[name]?.top - 500) {
+      window[name] = undefined;
+    }
+  };
+
   //console.log(scrollTop);
   $(".scrollNum").innerText = scrollTop;
 
   if (scrollTop > 1200) {
     $(".rbtext_01").classList.add("on");
+  } else {
+    $(".rbtext_01").classList.remove("on");
   }
 
   if (scrollTop > 1200) {
     $(".lbtext_01").classList.add("on");
+  } else {
+    $(".lbtext_01").classList.remove("on");
   }
 
   if (scrollTop > 4700) {
     $(".intelligent_anc_03").classList.add("on");
+  } else {
+    $(".intelligent_anc_03").classList.remove("on");
   }
   if (scrollTop > 5600) {
     $(".left_bottom_text_03").classList.add("on");
+  } else {
+    $(".left_bottom_text_03").classList.remove("on");
   }
 
   if (scrollTop > 6300) {
     $(".title1_04").classList.add("on");
+  } else {
+    $(".title1_04").classList.remove("on");
   }
   if (scrollTop > 6400) {
     $(".title2_04").classList.add("on");
+  } else {
+    $(".title2_04").classList.remove("on");
   }
   if (scrollTop > 6400) {
     $(".picture_04").classList.add("on");
@@ -38,40 +92,62 @@ window.addEventListener("scroll", () => {
 
   if (scrollTop > 7600) {
     $(".picture1_05").classList.add("on");
+  } else {
+    $(".picture1_05").classList.remove("on");
   }
   if (scrollTop > 7823) {
     $(".picture2_05").classList.add("on");
+  } else {
+    $(".picture2_05").classList.remove("on");
   }
   if (scrollTop > 8045) {
     $(".picture3_05").classList.add("on");
+  } else {
+    $(".picture3_05").classList.remove("on");
   }
   if (scrollTop > 8200) {
     $(".picture4_05").classList.add("on");
+  } else {
+    $(".picture4_05").classList.remove("on");
   }
 
   if (scrollTop > 7600) {
     $(".IMMERSIVE_05").classList.add("on");
+  } else {
+    $(".IMMERSIVE_05").classList.remove("on");
   }
   if (scrollTop > 7600) {
     $(".SOUND_05").classList.add("on");
+  } else {
+    $(".SOUND_05").classList.remove("on");
   }
 
   if (scrollTop > 7700) {
     $(".GET_LOST_IN_05").classList.add("on");
+  } else {
+    $(".GET_LOST_IN_05").classList.remove("on");
   }
   if (scrollTop > 7700) {
     $(".THE_STUDIO_SOUND_05").classList.add("on");
+  } else {
+    $(".THE_STUDIO_SOUND_05").classList.remove("on");
   }
 
   if (scrollTop > 8300) {
     $(".IMMERSIVE_SOUND_05").classList.add("on");
+  } else {
+    $(".IMMERSIVE_SOUND_05").classList.remove("on");
   }
   if (scrollTop > 8300) {
     $(".TAKE_NOISE_FREE_CALLS_05").classList.add("on");
+  } else {
+    $(".TAKE_NOISE_FREE_CALLS_05").classList.remove("on");
   }
 
   if (scrollTop > 8300) {
     $(".TAKE_NOISE_FREE_CALLS_05").classList.add("on");
+  } else {
+    $(".TAKE_NOISE_FREE_CALLS_05").classList.remove("on");
   }
 
   if (scrollTop > 9500) {
@@ -158,11 +234,66 @@ window.addEventListener("scroll", () => {
 
   if (scrollTop > 10300) {
     $(".title1_07").classList.add("on");
+  } else {
+    $(".title1_07").classList.remove("on");
   }
   if (scrollTop > 10400) {
     $(".title2_07").classList.add("on");
+  } else {
+    $(".title2_07").classList.remove("on");
   }
-  if (scrollTop > 1800) {
+
+  if (scrollTop > 12374) {
+    $(".title_08").classList.add("on");
+  } else {
+    $(".title_08").classList.remove("on");
+  }
+
+  if (scrollTop > 13000) {
+    $(".picture_08").classList.add("on");
+  } else {
+    $(".picture_08").classList.remove("on");
+  }
+
+  if (scrollTop > 15800) {
+    $(".the_right_fit_is_08").classList.add("on");
+  } else {
+    $(".the_right_fit_is_08").classList.remove("on");
+  }
+  if (scrollTop > 15800) {
+    $(".right_here_08").classList.add("on");
+  } else {
+    $(".right_here_08").classList.remove("on");
+  }
+  if (scrollTop > 15800) {
+    $(".text1_08").classList.add("on");
+  } else {
+    $(".text1_08").classList.remove("on");
+  }
+  if (scrollTop > 15800) {
+    $(".text2_08").classList.add("on");
+  } else {
+    $(".text2_08").classList.remove("on");
+  }
+
+  if (scrollTop > 20300) {
+    $(".img_10").classList.add("on");
+  } else {
+    $(".img_10").classList.remove("on");
+  }
+
+  if (scrollTop > 20300) {
+    $(".glossy_10").classList.add("on");
+  } else {
+    $(".glossy_10").classList.remove("on");
+  }
+  if (scrollTop > 20300) {
+    $(".finishes_10").classList.add("on");
+  } else {
+    $(".finishes_10").classList.remove("on");
+  }
+
+  if (scrollTop > 22000) {
     $(".line_11").classList.add("on");
   } else {
     $(".line_11").classList.remove("on");
@@ -177,6 +308,16 @@ window.addEventListener("scroll", () => {
     $(".united_states_line").classList.add("on");
   } else {
     $(".united_states_line").classList.remove("on");
+  }
+  if (scrollTop > 30200) {
+    $(".video_bg").classList.add("on");
+  } else {
+    $(".video_bg").classList.remove("on");
+  }
+  if (scrollTop > 32000) {
+    $(".img_bg").classList.add("on");
+  } else {
+    $(".img_bg").classList.remove("on");
   }
 });
 
@@ -523,6 +664,17 @@ gsap.to(".blinking03", {
   yoyoEase: "power2.in",
   repeat: -1,
 });
+/////////////////////////// section09 ///////////////////////////////////
+gsap.to("#section09 .images", {
+  top: -1500,
+  scrollTrigger: {
+    trigger: `#section09`,
+    start: "top top",
+    end: "bottom bottom",
+    scrub: 1,
+  },
+});
+/////////////////////////// section10 ///////////////////////
 
 /////////////////////////// section11 //////////////////////////////////////
 gsap.to(".circle_text_11", {
@@ -532,6 +684,7 @@ gsap.to(".circle_text_11", {
   repeat: -1,
 });
 
+/////////////////////////// footer /////////////////////
 gsap.to(".contact_footer", {
   // 사진 가로 크기
   x: -1549,
@@ -551,23 +704,29 @@ $(".circle_text_footer").addEventListener("click", () => {
   window.scrollTo(0, 0);
 });
 
-// gsap.to('#section11 .image01_11', {
-
-//   opacity:1,
-//   scale:1,
-//   scrollTrigger: {
-//     trigger: "#section11",
-//     start: "top top",
-//     end: 'bottom bottom',
-//     scrub: true,
-//   }
-// });
-
 const tl = gsap.timeline();
 
 tl.to("#section11 .image01_11", { opacity: 1, scale: 1 });
 tl.to("#section11 .image01_11", {
-  transformOrigin: "right bottom",
+  transformOrigin: "left top",
+  scale: 0.3,
+  opacity: 0,
+});
+tl.to("#section11 .image02_11", { opacity: 1, scale: 1 });
+tl.to("#section11 .image02_11", {
+  transformOrigin: "left top",
+  scale: 0.3,
+  opacity: 0,
+});
+tl.to("#section11 .image03_11", { opacity: 1, scale: 1 });
+tl.to("#section11 .image03_11", {
+  transformOrigin: "left top",
+  scale: 0.3,
+  opacity: 0,
+});
+tl.to("#section11 .image04_11", { opacity: 1, scale: 1 });
+tl.to("#section11 .image04_11", {
+  transformOrigin: "left top",
   scale: 0.3,
   opacity: 0,
 });
@@ -576,9 +735,113 @@ ScrollTrigger.create({
   animation: tl,
   trigger: "#section11",
   start: "top top",
-  end: "+=800",
+  end: "+=3600",
   scrub: 1,
 });
+
+gsap.to(".take_12", {
+  //최종위치
+  left: -1000,
+  opacity: 1,
+  scrollTrigger: {
+    trigger: "#section12",
+    start: "top bottom",
+    end: "+=1000",
+    scrub: 1,
+  },
+});
+gsap.to(".noise_free_12", {
+  //최종위치
+  left: -1600,
+  opacity: 1,
+  scrollTrigger: {
+    trigger: "#section12",
+    start: "top bottom",
+    end: "+=1300",
+    scrub: 1,
+  },
+});
+gsap.to(".calls_12", {
+  //최종위치
+  left: -1200,
+  opacity: 1,
+  scrollTrigger: {
+    trigger: "#section12",
+    start: "top bottom",
+    end: "+=1000",
+    scrub: 1,
+  },
+});
+// gsap.to('#section13 .video_bg', {
+
+//   width:1920,
+//   scrollTrigger: {
+//       trigger: "#section13",
+//       start: "1000 top",
+//       end: () => "+=" + 1000,
+//       // end: 'bottom bottom',
+//       scrub: 1,
+//   }
+// });
+// gsap.to('#section13 .img_bg > img', {
+
+//   height:0,
+//   scrollTrigger: {
+//       trigger: "#section13",
+//       start: "top top",
+//       end: () => "+=" + 1000,
+//       // end: 'bottom bottom',
+//       scrub: 1,
+//   }
+// });
+
+const pinSection = (sectionID, height) => {
+  const div = document.createElement("div");
+
+  div.className = "container";
+
+  const section = document.getElementById(sectionID.substr(1));
+  const child = section.children[0];
+
+  section.style.height = `${height}px`;
+
+  section.removeChild(child);
+  div.appendChild(child);
+  section.appendChild(div);
+
+  setTimeout(() => {
+    gsap.to(`${sectionID} .container`, {
+      scrollTrigger: {
+        trigger: sectionID,
+        start: "top top",
+        end: "bottom bottom", // 스크롤 기다리고 싶은 숫자만큼넣고 css도 변경
+        pin: true,
+        pinSpacing: false,
+        scrub: 1,
+      },
+    });
+  }, 1);
+};
+
+const pinObject = (sectionID) => {
+  gsap.to(`${sectionID} .pinned`, {
+    scrollTrigger: {
+      trigger: `${sectionID} .container`,
+      start: "top",
+      end: "bottom",
+      pin: true,
+      pinSpacing: false,
+      scrub: 1,
+    },
+  });
+};
+
+pinObject("#section09");
+// 멈추기 위해서 넣기 스크롤 양만큼 숫자
+pinSection("#section10", 2400);
+pinSection("#section11", 4300);
+// pinSection("#section12", 10);
+pinSection("#section13", 7000);
 
 // gsap.to('.sticky-parent', {
 //   // x: -innerWidth*3,

@@ -1008,7 +1008,7 @@
   position: absolute;
   left: 0px;
   top: 0px;
-  width: 64px;
+  width: 80px;
   height: 1920px;
   overflow: hidden;
 }
@@ -1017,7 +1017,7 @@
 #section08 .side_text_08 {
   position: absolute;
   left: 10px;
-  width: 64px;
+  width: 80px;
   /* height: 585px; */
   height: 2400px;
   /* 사이즈(w,h 사이즈) 바깥으로 나가는 것 잘라주기 */
@@ -1029,7 +1029,14 @@
   top: 250px;
   transform: translateX(-50%);
   z-index: 100;
+  opacity: 0;
+  transition: all 0.7s;
 }
+#section08 .title_08.on {
+  opacity: 1;
+  transition: all 0.7s;
+}
+
 #section08 .title_08 li + li {
   margin-top: 20px;
 }
@@ -1057,8 +1064,15 @@
 
 #section08 .picture_08 {
   position: absolute;
+  top: 1000px;
+  right: 0px;
+  transition: all 0.7s;
+}
+#section08 .picture_08.on {
+  position: absolute;
   top: 370px;
   right: 0px;
+  transition: all 0.7s;
 }
 
 #section08 .right_text_08 {
@@ -1088,81 +1102,238 @@
   right: 350px;
 }
 
-#section08 .left_text_08 {
+#section08 .the_right_fit_is_08 {
   position: absolute;
   top: 1570px;
   left: 140px;
+  /* right: 50px; */
+  transform: translateX(970px);
+  transition: all 0.7s;
 }
+#section08 .the_right_fit_is_08.on {
+  transform: translateX(0);
+}
+#section08 .right_here_08 {
+  position: absolute;
+  top: 1650px;
+  left: 140px;
+  /* right: 50px; */
+  transform: translateX(1170px);
+  transition: all 0.7s;
+}
+#section08 .right_here_08.on {
+  transform: translateX(0);
+}
+
 #section08 .bottom_text_08 {
   position: absolute;
   top: 1740px;
-  left: 140px;
+  right: 50px;
+  transition: all 0.7s;
 }
-#section08 .bottom_text_08 li + li {
-  margin-top: 8px;
+#section08 .bottom_text_08.on {
+  position: absolute;
+  top: 1740px;
+  left: 140px;
+  transition: all 0.7s;
+}
+
+#section08 .text1_08 {
+  position: absolute;
+  top: 1740px;
+  left: 150px;
+  transform: translateX(1000px);
+  transition: all 0.7s;
+}
+#section08 .text1_08.on {
+  transform: translateX(0);
+}
+#section08 .text2_08 {
+  position: absolute;
+  top: 1770px;
+  left: 150px;
+  transform: translateX(890px);
+  transition: all 0.7s;
+}
+#section08 .text2_08.on {
+  transform: translateX(0);
 }
 
 /******************* section09  *******************************/
 #section09 {
+  display: flex;
   position: relative;
   /* 기다리고싶은 숫자만큼 변경 */
-  height: calc(100vh + 1548px - 370px + 1000px);
+  /* height: calc(100vh + 1548px - 370px + 1000px); */
+  height: 5000px;
   width: 1920px;
   /* section09 시작 */
   /* 기다리고싶은 숫자만큼 변경 */
   padding-top: calc((1548px - 598px) + 1000px);
-  /* background-color: #e1e1e1; */
-  background-color: rgb(15, 67, 67);
+  background-color: #cac9c9;
   z-index: -100;
 }
 
-#section09 .section09_board {
-  background-color: red;
-  width: 1920px;
-  /* height: 1150px; */
-  height: 800px;
-  overflow: hidden;
+#section09 .container {
+  position: relative;
+  flex: 1;
+
+  padding-top: 1000px;
+  padding-bottom: 2000px;
 }
 
 #section09 .title_09 {
+  width: 100vw;
+  height: 100vh;
   position: absolute;
-  top: 2000px;
+  top: 50px;
   left: 50%;
   transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#section09 .title_09 > div {
+  /* position: absolute;
+  left: 50%;
+  transform: translateX(-50%); */
 }
 #section09 .title_09 div + div {
-  margin-top: 30px;
+  margin-top: 20px;
+}
+
+#section09 .left_bottom_text_09 {
+  position: absolute;
+  bottom: 100px;
+  left: 55px;
+}
+
+#section09 .images {
+  position: absolute;
+  /* 사진 올라오는 속도 */
+  bottom: -2000px;
+  left: 100px;
+  z-index: -1;
+}
+#section09 .image01_09 {
+  position: absolute;
+  left: 200px;
+}
+#section09 .image02_09 {
+  position: absolute;
+
+  top: 500px;
+  left: 900px;
+}
+#section09 .image03_09 {
+  position: absolute;
+
+  top: 1000px;
+  left: 200px;
 }
 
 /************************ section10  *****************************/
 #section10 {
-  position: relative;
-  height: 100vh;
   width: 1920px;
-  background-image: url(../img/part3-3/8ee275133472299.61d298ea6d4d4.gif);
+
+  overflow-x: visible;
+}
+#section10 .container {
+  position: relative;
+
+  width: 100%;
+  height: 100vh;
+  background-color: #2f2f2f;
+  /* background-image: url(../img/part3-3/8ee275133472299.61d298ea6d4d4.gif);
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
 }
 
-#section10 .glossy_title_10 {
+#section10 .img_10 {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 50;
+}
+#section10 .img_10 > img {
+  width: 100vw;
+  height: 100vh;
+  /* 모서리 둥글게 */
+  border-radius: 30px;
+  /* 내가 지정한 너비 높이값에 이미지가 꽉차게 */
+  object-fit: cover;
+  transform: scale(0.5);
+  transition: all 0.7s;
+}
+#section10 .img_10.on > img {
+  transform: scale(1);
+  border-radius: 0;
 }
 
-#section10 .glossy_title_10 li + li {
-  margin-top: 40px;
+/* #section10 .title_10 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
 }
+
+#section10 .title_10 div + div {
+  margin-top: 40px;
+} */
 
 #section10 .glossy_10 {
-  margin-left: 20px;
+  position: absolute;
+  top: 400px;
+  left: 10px;
+  transition: all 0.7s;
+  z-index: 100;
+}
+#section10 .glossy_10.on {
+  position: absolute;
+  top: 400px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  transition: all 0.7s;
+}
+
+#section10 .finishes_10 {
+  position: absolute;
+  top: 550px;
+  right: 10px;
+  transition: all 0.7s;
+  z-index: 100;
+}
+#section10 .finishes_10.on {
+  position: absolute;
+  margin-left: 50px;
+  top: 550px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  transition: all 0.7s;
+}
+
+#section10 .long_text_10 {
+  position: absolute;
+  bottom: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.7s;
 }
 
 /************************ section11  **************************/
 #section11 {
-  height: 1800px;
   width: 1920px;
+}
+#section11 .container {
+  position: relative;
+
+  width: 100%;
+  height: 100vh;
+
   background-image: url(../img/part3-4/background.jpg);
 }
 
@@ -1227,48 +1398,195 @@
   position: absolute;
   left: 0;
   top: 0;
-  transform-origin: left top;
+  /* transform-origin: left top; */
+  transform-origin: right bottom;
   transform: scale(0.3);
   opacity: 0;
+  z-index: 1;
 }
-
-#section11 .take_11 {
+#section11 .image02_11 {
+  width: 100vw;
+  height: 100vh;
   position: absolute;
-  left: -1000px;
-  top: 1150px;
-  z-index: 100;
+  left: 0;
+  top: 0;
+  transform-origin: right bottom;
+  transform: scale(0.3);
+  opacity: 0;
+  z-index: 1;
 }
-#section11 .noise_free_11 {
-  position: absolute;
-  left: -1700px;
-  top: 1300px;
-  z-index: 100;
+#section11 .image02_11 > img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
 }
-#section11 .calls_11 {
+#section11 .image03_11 {
+  width: 100vw;
+  height: 980px;
   position: absolute;
-  left: -1000px;
-  top: 1450px;
-  z-index: 100;
+  left: 0;
+  top: 0;
+  transform-origin: right bottom;
+  transform: scale(0.3);
+  opacity: 0;
+  z-index: 1;
+}
+#section11 .image03_11 > img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+#section11 .image04_11 {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-origin: right bottom;
+  transform: scale(0.3);
+  opacity: 0;
+  z-index: 1;
+}
+#section11 .image04_11 > img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
 }
 
 /************************ section12  **************************/
 #section12 {
+  position: relative;
+  width: 100%;
   height: 100vh;
-  width: 1920px;
-  background: rgb(193, 12, 72);
+  background-image: url(../img/part3-4/background.jpg);
 }
+
+#section12 .take_12 {
+  position: absolute;
+  left: -200px;
+  top: 200px;
+  z-index: 100;
+}
+#section12 .noise_free_12 {
+  position: absolute;
+  left: -2500px;
+  top: 350px;
+  z-index: 100;
+}
+#section12 .calls_12 {
+  position: absolute;
+  left: -300px;
+  top: 500px;
+  z-index: 100;
+}
+
 /************************ section13  **************************/
 #section13 {
-  height: 100vh;
   width: 1920px;
-  background: rgb(183, 252, 45);
 }
-/************************ section14 **************************/
-#section14 {
+#section13 .container {
+  position: relative;
+
+  width: 100%;
   height: 100vh;
-  width: 1920px;
-  background: rgb(41, 127, 255);
+  /* background-color: red; */
+  background-image: url(../img/part3-4/background.jpg);
 }
+
+#section13 .image_background_13 {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+#section13 .image_background_13 .img_bg {
+  width: 1400px;
+  height: 788px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+#section13 .image_background_13 .img_bg .hidden {
+  width: 1400px;
+  height: 788px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-origin: center top;
+  transition: all 1s;
+}
+#section13 .image_background_13 .img_bg.on .hidden {
+  height: 0;
+}
+#section13 .image_background_13 .video_bg {
+  width: 0;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 1s;
+}
+#section13 .image_background_13 .video_bg.on {
+  width: 100vw;
+}
+#section13 .image_background_13 .video_bg > video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+#section13 .galaxy_buds_image_13 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 200;
+}
+#section13 .galaxy_buds_image02_13 {
+  position: absolute;
+  top: 50%;
+  left: 400px;
+  transform: translateY(-50%);
+  opacity: 0.7;
+  z-index: 100;
+}
+#section13 .galaxy_buds_image03_13 {
+  position: absolute;
+  top: 50%;
+  right: 400px;
+  transform: translateY(-50%);
+  opacity: 0.7;
+  z-index: 100;
+}
+
+#section13 .smart_text_13 {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+#section13 .small_title_13 {
+  position: absolute;
+  top: 80px;
+  left: 50px;
+  z-index: 100;
+}
+#section13 .small_title_13 div + div {
+  margin-top: 50px;
+}
+#section13 .long_text_13 {
+  position: absolute;
+  top: 120px;
+  right: 50px;
+  z-index: 100;
+}
+
+/************************ section14  **************************/
+
 /************************ footer  **************************/
 #footer {
   position: relative;

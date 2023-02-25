@@ -8,4 +8,8 @@ const scroller = ScrollSmoother.create({
   effects: true, // looks for data-speed and data-lag attributes on elements
   normalizeScroll: false, // prevents address bar from showing/hiding on most devices, solves various other browser inconsistencies
   ignoreMobileResize: true, // skips ScrollTrigger.refresh() on mobile resizes from address bar showing/hiding
+  onUpdate: (e) => {
+    console.log(e.scrollTop());
+    return false;
+  },
 });
