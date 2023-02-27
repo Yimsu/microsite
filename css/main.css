@@ -553,78 +553,75 @@
   margin-top: 10px;
 }
 
-#section05 .IMMERSIVE_05 {
+#section05 .immersive_05 {
   height: 26px;
   overflow: hidden;
 }
-/* 이미지가 이미지박스 크기 밖에 있다가  */
-#section05 .IMMERSIVE_05 img {
+#section05 .immersive_05 img {
   transform: translateY(26px);
   transition: 1s;
 }
-#section05 .IMMERSIVE_05.on img {
+#section05 .immersive_05.on img {
   transform: translateY(0);
 }
-#section05 .SOUND_05 {
+#section05 .sound_05 {
   height: 26px;
   overflow: hidden;
 }
-/* 이미지가 이미지박스 크기 밖에 있다가  */
-#section05 .SOUND_05 img {
+#section05 .sound_05 img {
   transform: translateY(26px);
   transition: 1s;
 }
-#section05 .SOUND_05.on img {
-  transform: translateY(0);
-}
-
-#section05 .GET_LOST_IN_05 {
-  height: 26px;
-  overflow: hidden;
-}
-/* 이미지가 이미지박스 크기 밖에 있다가  */
-#section05 .GET_LOST_IN_05 img {
-  transform: translateY(26px);
-  transition: 1s;
-}
-#section05 .GET_LOST_IN_05.on img {
-  transform: translateY(0);
-}
-#section05 .THE_STUDIO_SOUND_05 {
-  height: 26px;
-  overflow: hidden;
-}
-/* 이미지가 이미지박스 크기 밖에 있다가  */
-#section05 .THE_STUDIO_SOUND_05 img {
-  transform: translateY(26px);
-  transition: 1s;
-}
-#section05 .THE_STUDIO_SOUND_05.on img {
+#section05 .sound_05.on img {
   transform: translateY(0);
 }
 
-#section05 .IMMERSIVE_SOUND_05 {
-  height: 26px;
+#section05 .get_lost_in_05 {
+  height: 40px;
   overflow: hidden;
 }
-/* 이미지가 이미지박스 크기 밖에 있다가  */
-#section05 .IMMERSIVE_SOUND_05 img {
+#section05 .get_lost_in_05 img {
   transform: translateY(26px);
   transition: 1s;
 }
-#section05 .IMMERSIVE_SOUND_05.on img {
+#section05 .get_lost_in_05.on img {
   transform: translateY(0);
 }
-#section05 .TAKE_NOISE_FREE_CALLS_05 {
+#section05 .the_studio_sound_05 {
   height: 26px;
   overflow: hidden;
 }
 /* 이미지가 이미지박스 크기 밖에 있다가  */
-#section05 .TAKE_NOISE_FREE_CALLS_05 img {
+#section05 .the_studio_sound_05 img {
   transform: translateY(26px);
   transition: 1s;
 }
-#section05 .TAKE_NOISE_FREE_CALLS_05.on img {
+#section05 .the_studio_sound_05.on img {
+  transform: translateY(0);
+}
+
+#section05 .immersive_sound_05 {
+  height: 26px;
+  overflow: hidden;
+}
+/* 이미지가 이미지박스 크기 밖에 있다가  */
+#section05 .immersive_sound_05 img {
+  transform: translateY(26px);
+  transition: 1s;
+}
+#section05 .immersive_sound_05.on img {
+  transform: translateY(0);
+}
+#section05 .take_noise_free_calls_05 {
+  height: 27px;
+  overflow: hidden;
+}
+/* 이미지가 이미지박스 크기 밖에 있다가  */
+#section05 .take_noise_free_calls_05 img {
+  transform: translateY(26px);
+  transition: 1s;
+}
+#section05 .take_noise_free_calls_05.on img {
   transform: translateY(0);
 }
 

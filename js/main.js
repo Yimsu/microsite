@@ -112,42 +112,42 @@ window.addEventListener("scroll", () => {
   }
 
   if (scrollTop > 7600) {
-    $(".IMMERSIVE_05").classList.add("on");
+    $(".immersive_05").classList.add("on");
   } else {
-    $(".IMMERSIVE_05").classList.remove("on");
+    $(".immersive_05").classList.remove("on");
   }
-  if (scrollTop > 7600) {
-    $(".SOUND_05").classList.add("on");
-  } else {
-    $(".SOUND_05").classList.remove("on");
-  }
+  // if (scrollTop > 7600) {
+  //   $(".sound_05").classList.add("on");
+  // } else {
+  //   $(".sound_05").classList.remove("on");
+  // }
 
   if (scrollTop > 7700) {
-    $(".GET_LOST_IN_05").classList.add("on");
+    $(".get_lost_in_05").classList.add("on");
   } else {
-    $(".GET_LOST_IN_05").classList.remove("on");
+    $(".get_lost_in_05").classList.remove("on");
   }
   if (scrollTop > 7700) {
-    $(".THE_STUDIO_SOUND_05").classList.add("on");
+    $(".the_studio_sound_05").classList.add("on");
   } else {
-    $(".THE_STUDIO_SOUND_05").classList.remove("on");
+    $(".the_studio_sound_05").classList.remove("on");
   }
 
   if (scrollTop > 8300) {
-    $(".IMMERSIVE_SOUND_05").classList.add("on");
+    $(".immersive_sound_05").classList.add("on");
   } else {
-    $(".IMMERSIVE_SOUND_05").classList.remove("on");
+    $(".immersive_sound_05").classList.remove("on");
   }
   if (scrollTop > 8300) {
-    $(".TAKE_NOISE_FREE_CALLS_05").classList.add("on");
+    $(".take_noise_free_calls_05").classList.add("on");
   } else {
-    $(".TAKE_NOISE_FREE_CALLS_05").classList.remove("on");
+    $(".take_noise_free_calls_05").classList.remove("on");
   }
 
   if (scrollTop > 8300) {
-    $(".TAKE_NOISE_FREE_CALLS_05").classList.add("on");
+    $(".take_noise_free_calls_05").classList.add("on");
   } else {
-    $(".TAKE_NOISE_FREE_CALLS_05").classList.remove("on");
+    $(".take_noise_free_calls_05").classList.remove("on");
   }
 
   if (scrollTop > 9500) {
