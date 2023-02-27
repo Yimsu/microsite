@@ -309,51 +309,15 @@ window.addEventListener("scroll", () => {
   } else {
     $(".united_states_line").classList.remove("on");
   }
-
-  if (scrollTop > 27000) {
-    $(".galaxy_buds_image02_13").classList.add("on");
-  } else {
-    $(".galaxy_buds_image02_13").classList.remove("on");
-  }
-  if (scrollTop > 27000) {
-    $(".galaxy_buds_image03_13").classList.add("on");
-  } else {
-    $(".galaxy_buds_image03_13").classList.remove("on");
-  }
-
-  if (scrollTop > 27600) {
-    $(".smart_text_13").classList.add("on");
-  } else {
-    $(".smart_text_13").classList.remove("on");
-  }
-
-  if (scrollTop > 27600) {
-    $(".small_title_13").classList.add("on");
-  } else {
-    $(".small_title_13").classList.remove("on");
-  }
-
-  if (scrollTop > 27600) {
-    $(".long_text_13").classList.add("on");
-  } else {
-    $(".long_text_13").classList.remove("on");
-  }
-
-  if (scrollTop > 28300) {
+  if (scrollTop > 30200) {
     $(".video_bg").classList.add("on");
   } else {
     $(".video_bg").classList.remove("on");
   }
-  if (scrollTop > 28300) {
+  if (scrollTop > 32000) {
     $(".img_bg").classList.add("on");
   } else {
     $(".img_bg").classList.remove("on");
-  }
-
-  if (scrollTop > 28300) {
-    $(".galaxy_title_13").classList.add("on");
-  } else {
-    $(".galaxy_title_13").classList.remove("on");
   }
 });
 
@@ -808,7 +772,6 @@ gsap.to(".calls_12", {
     scrub: 1,
   },
 });
-
 // gsap.to('#section13 .video_bg', {
 
 //   width:1920,
@@ -878,7 +841,7 @@ pinObject("#section09");
 pinSection("#section10", 2400);
 pinSection("#section11", 4300);
 // pinSection("#section12", 10);
-pinSection("#section13", 3500);
+pinSection("#section13", 7000);
 
 // gsap.to('.sticky-parent', {
 //   // x: -innerWidth*3,
