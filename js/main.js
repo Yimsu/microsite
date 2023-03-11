@@ -304,11 +304,19 @@ window.addEventListener("scroll", () => {
   } else {
     $(".email_line").classList.remove("on");
   }
+
   if (scrollTop > 23500) {
     $(".united_states_line").classList.add("on");
   } else {
     $(".united_states_line").classList.remove("on");
   }
+
+  if (scrollTop >= 27784 && scrollTop <= 30000) {
+    $(".smart_text_13").classList.add("on");
+  } else {
+    $(".smart_text_13").classList.remove("on");
+  }
+
   if (scrollTop > 30200) {
     $(".video_bg").classList.add("on");
   } else {

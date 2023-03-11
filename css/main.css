@@ -1565,6 +1565,11 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 100;
+  opacity: 0;
+  transition: all 1s;
+}
+#section13 .smart_text_13.on {
+  opacity: 1;
 }
 #section13 .small_title_13 {
   position: absolute;
