@@ -31,18 +31,17 @@ $(".menu_hover3").addEventListener("click", () => {
 $(".menu_hover4").addEventListener("click", () => {
   menu.classList.remove("active");
 });
-
 $(".hover_home").addEventListener("click", () => {
   window.scrollTo(0, 0);
 });
 $(".hover_about").addEventListener("click", () => {
-  window.scrollTo(0, 11732);
+  window.scrollTo(0, 8146);
 });
 $(".hover_color").addEventListener("click", () => {
-  window.scrollTo(0, 20000);
+  window.scrollTo(0, 22254);
 });
 $(".hover_contact").addEventListener("click", () => {
-  window.scrollTo(0, 39300);
+  window.scrollTo(0, 34000);
 });
 
 // const home = document.getElementsByClassName("hover_home");

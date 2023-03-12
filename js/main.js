@@ -48,7 +48,7 @@ window.addEventListener("scroll", () => {
     }
   };
 
-  //console.log(scrollTop);
+  console.log(scrollTop);
   $(".scrollNum").innerText = scrollTop;
 
   if (scrollTop > 1200) {
@@ -116,16 +116,16 @@ window.addEventListener("scroll", () => {
   } else {
     $(".immersive_05").classList.remove("on");
   }
-  // if (scrollTop > 7600) {
-  //   $(".sound_05").classList.add("on");
-  // } else {
-  //   $(".sound_05").classList.remove("on");
-  // }
+  if (scrollTop > 7600) {
+    $(".sound_05").classList.add("on");
+  } else {
+    $(".sound_05").classList.remove("on");
+  }
 
   if (scrollTop > 7700) {
-    $(".get_lost_in_05").classList.add("on");
+    $(".get_lost_in_the_05").classList.add("on");
   } else {
-    $(".get_lost_in_05").classList.remove("on");
+    $(".get_lost_in_the_05").classList.remove("on");
   }
   if (scrollTop > 7700) {
     $(".the_studio_sound_05").classList.add("on");
@@ -138,6 +138,7 @@ window.addEventListener("scroll", () => {
   } else {
     $(".immersive_sound_05").classList.remove("on");
   }
+
   if (scrollTop > 8300) {
     $(".take_noise_free_calls_05").classList.add("on");
   } else {
@@ -311,21 +312,48 @@ window.addEventListener("scroll", () => {
     $(".united_states_line").classList.remove("on");
   }
 
-  if (scrollTop >= 27784 && scrollTop <= 30000) {
+  if (scrollTop > 27000) {
+    $(".galaxy_buds_image02_13").classList.add("on");
+  } else {
+    $(".galaxy_buds_image02_13").classList.remove("on");
+  }
+  if (scrollTop > 27000) {
+    $(".galaxy_buds_image03_13").classList.add("on");
+  } else {
+    $(".galaxy_buds_image03_13").classList.remove("on");
+  }
+  if (scrollTop >= 27784 && scrollTop <= 29000) {
+    $(".small_title_13").classList.add("on");
+  } else {
+    $(".small_title_13").classList.remove("on");
+  }
+  if (scrollTop >= 27784 && scrollTop <= 29000) {
+    $(".long_text_13").classList.add("on");
+  } else {
+    $(".long_text_13").classList.remove("on");
+  }
+
+  if (scrollTop >= 27784 && scrollTop <= 29000) {
     $(".smart_text_13").classList.add("on");
   } else {
     $(".smart_text_13").classList.remove("on");
   }
 
-  if (scrollTop > 30200) {
+  if (scrollTop > 29500) {
     $(".video_bg").classList.add("on");
   } else {
     $(".video_bg").classList.remove("on");
   }
-  if (scrollTop > 32000) {
+  if (scrollTop > 29500) {
     $(".img_bg").classList.add("on");
   } else {
     $(".img_bg").classList.remove("on");
+  }
+
+  if (scrollTop > 29500) {
+    $(".galaxy_title_13").classList.add("on");
+  } else {
+    $(".galaxy_title_13").classList.remove("on");
   }
 });
 
@@ -780,6 +808,7 @@ gsap.to(".calls_12", {
     scrub: 1,
   },
 });
+
 // gsap.to('#section13 .video_bg', {
 
 //   width:1920,
@@ -849,7 +878,7 @@ pinObject("#section09");
 pinSection("#section10", 2400);
 pinSection("#section11", 4300);
 // pinSection("#section12", 10);
-pinSection("#section13", 7000);
+pinSection("#section13", 5800);
 
 // gsap.to('.sticky-parent', {
 //   // x: -innerWidth*3,

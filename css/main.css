@@ -544,12 +544,12 @@
   transform: translateY(0);
 }
 
-#section05 .immersive_sound_05 {
+#section05 .immersive_sound1_05 {
   position: absolute;
   left: 100px;
   top: 300px;
 }
-#section05 .immersive_sound_05 li + li {
+#section05 .immersive_sound1_05 li + li {
   margin-top: 10px;
 }
 
@@ -576,15 +576,15 @@
   transform: translateY(0);
 }
 
-#section05 .get_lost_in_05 {
-  height: 40px;
+#section05 .get_lost_in_the_05 {
+  height: 26px;
   overflow: hidden;
 }
-#section05 .get_lost_in_05 img {
+#section05 .get_lost_in_the_05 img {
   transform: translateY(26px);
   transition: 1s;
 }
-#section05 .get_lost_in_05.on img {
+#section05 .get_lost_in_the_05.on img {
   transform: translateY(0);
 }
 #section05 .the_studio_sound_05 {
@@ -934,9 +934,6 @@
   bottom: 30px;
   transform: translateX(-50%);
 }
-#section07 .text_07 li + li {
-  margin-top: 8px;
-}
 
 #section07 .bettery_life_07 {
   position: absolute;
@@ -1043,6 +1040,7 @@
   left: 50%;
   top: 160px;
   transform: translateX(-50%);
+  opacity: 0.8;
 }
 
 #section08 .circle_line_08 {
@@ -1052,11 +1050,6 @@
   width: 454px;
   height: 454px;
   z-index: 50;
-}
-#section08 .play_08 {
-  position: absolute;
-  top: 160px;
-  right: 250px;
 }
 
 #section08 .picture_08 {
@@ -1183,25 +1176,21 @@
   width: 100vw;
   height: 100vh;
   position: absolute;
-  top: 50px;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#section09 .title_09 > div {
-  /* position: absolute;
-  left: 50%;
-  transform: translateX(-50%); */
-}
+
 #section09 .title_09 div + div {
   margin-top: 20px;
 }
 
 #section09 .left_bottom_text_09 {
   position: absolute;
-  bottom: 100px;
+  bottom: 50px;
   left: 55px;
 }
 
@@ -1488,6 +1477,7 @@
   height: 100vh;
   /* background-color: red; */
   background-image: url(../img/part3-4/background.jpg);
+  overflow: hidden;
 }
 
 #section13 .image_background_13 {
@@ -1513,7 +1503,7 @@
   left: 0;
   top: 0;
   transform-origin: center top;
-  transition: all 1s;
+  transition: all 2s;
 }
 #section13 .image_background_13 .img_bg.on .hidden {
   height: 0;
@@ -1542,19 +1532,42 @@
   transform: translate(-50%, -50%);
   z-index: 200;
 }
+
 #section13 .galaxy_buds_image02_13 {
   position: absolute;
   top: 50%;
-  left: 400px;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0]1s;
   opacity: 0.7;
   z-index: 100;
 }
+
+#section13 .galaxy_buds_image02_13.on {
+  position: absolute;
+  top: 50%;
+  left: 200px;
+  transform: translateY(-50%);
+  transition: all 1s;
+  opacity: 0.7;
+  z-index: 100;
+}
+
 #section13 .galaxy_buds_image03_13 {
   position: absolute;
   top: 50%;
-  right: 400px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 1s;
+  opacity: 0.7;
+  z-index: 100;
+}
+#section13 .galaxy_buds_image03_13.on {
+  position: absolute;
+  top: 50%;
+  right: 200px;
   transform: translateY(-50%);
+  transition: all 1s;
   opacity: 0.7;
   z-index: 100;
 }
@@ -1571,23 +1584,52 @@
 #section13 .smart_text_13.on {
   opacity: 1;
 }
+/* #section13 .smart_text_13 img {
+  transform: translateY(126px);
+  transition: 1s;
+}
+#section13 .smart_text_13.on img {
+  transform: translateY(0);
+} */
+
 #section13 .small_title_13 {
   position: absolute;
   top: 80px;
   left: 50px;
   z-index: 100;
+  transition: all 0.7s;
+  opacity: 0;
 }
+#section13 .small_title_13.on {
+  opacity: 1;
+}
+
 #section13 .small_title_13 div + div {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 #section13 .long_text_13 {
   position: absolute;
   top: 120px;
   right: 50px;
   z-index: 100;
+  opacity: 0;
+  transition: all 0.7s;
+}
+#section13 .long_text_13.on {
+  opacity: 1;
 }
 
-/************************ section14  **************************/
+#section13 .galaxy_title_13 {
+  position: absolute;
+  left: 300px;
+  top: 400px;
+  transform: translateY(700px);
+  transition: all 2s;
+  /* z-index: 300; */
+}
+#section13 .galaxy_title_13.on {
+  transform: translateY(0);
+}
 
 /************************ footer  **************************/
 #footer {
