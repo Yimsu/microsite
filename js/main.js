@@ -49,7 +49,7 @@ window.addEventListener("scroll", () => {
   };
 
   console.log(scrollTop);
-  $(".scrollNum").innerText = scrollTop;
+  // $(".scrollNum").innerText = scrollTop;
 
   if (scrollTop > 1200) {
     $(".rbtext_01").classList.add("on");
